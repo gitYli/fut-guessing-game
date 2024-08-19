@@ -1,0 +1,3676 @@
+@font-face {
+    font-family: UltimateTeam;
+    font-style: normal;
+    src: url(https://cdn.futwiz.com/assets/font/fc24/CruyffSans-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: UltimateTeam;
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://cdn.futwiz.com/assets/font/fc24/CruyffSans-Medium.woff) format("woff")
+}
+
+@font-face {
+    font-family: UltimateTeamCondensed;
+    font-stretch: condensed;
+    src: url(https://cdn.futwiz.com/assets/font/fc24/CruyffSansCondensed-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: UltimateTeamCondensed;
+    font-stretch: condensed;
+    font-weight: 500;
+    src: url(https://cdn.futwiz.com/assets/font/fc24/CruyffSansCondensed-Medium.woff) format("woff")
+}
+
+[class*=card-24-]:hover > .att-row-num {
+    display: flex
+}
+
+[class*=card-24-]:hover > .att-row-label {
+    display: flex
+}
+
+[class*=card-24-]:hover > .card-24-pack-details {
+    display: flex
+}
+
+[class*=card-24-]:hover > .card-24-pack-nation {
+    display: flex
+}
+
+[class*=card-24-]:hover > .card-24-pack-league {
+    display: flex
+}
+
+[class*=card-24-]:hover > .card-24-pack-clubs {
+    display: flex
+}
+
+[class*=card-24-]:hover > .att-row-num {
+    display: flex
+}
+
+[class*=card-24-]:hover > .att-row-label {
+    display: flex
+}
+
+[class*=card-24-]:hover > .card-24-details {
+    display: flex
+}
+
+[class*=card-24-]:hover > .card-24-nation {
+    display: flex
+}
+
+[class*=card-24-]:hover > .card-24-league {
+    display: flex
+}
+
+[class*=card-24-]:hover > .card-24-clubs {
+    display: flex
+}
+
+.card-24 {
+    line-height: 1;
+    position: relative;
+    width: 260px;
+    height: 390px;
+    background-repeat: no-repeat;
+    background-size: 285px 394px;
+    background-position: center
+}
+
+.card-24-face-alt {
+    position: absolute;
+    top: -5px;
+    overflow: hidden;
+    right: -10px;
+    width: 283px;
+    height: 395px;
+    z-index: 9
+}
+
+.card-24-face-alt img {
+    width: 100%
+}
+
+.card-24-face {
+    position: absolute;
+    right: 20px;
+    top: 68px;
+    overflow: hidden;
+    width: 180px;
+    height: 180px
+}
+
+.card-24-face-inner {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.card-24-face-inner img {
+    height: 180px
+}
+
+.card-24-rating {
+    font-family: ultimateteamcondensed;
+    font-weight: 500;
+    font-size: 42px;
+    position: absolute;
+    top: 60px;
+    left: 22px;
+    width: 50px;
+    text-align: center;
+    z-index: 11
+}
+
+.card-24-position {
+    font-family: ultimateteamcondensed;
+    font-weight: 500;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    left: 22px;
+    width: 50px;
+    text-align: center;
+    z-index: 11
+}
+
+.card-24-name {
+    font-family: ultimateteam;
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: -.75px;
+    position: absolute;
+    top: 253px;
+    left: 20px;
+    width: 218px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    z-index: 11
+}
+
+.card-24-details {
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 317px;
+    z-index: 10;
+    gap: 5px
+}
+
+.card-24-details div {
+    flex: 0 0 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.card-24-nation img {
+    width: 28px;
+    height: 17px
+}
+
+.card-24-league img {
+    width: 27px;
+    height: 27px
+}
+
+.card-24-club img {
+    width: 26px;
+    height: 26px
+}
+
+.card-24-atts {
+    position: absolute;
+    top: 282px;
+    z-index: 9;
+    left: 25px;
+    font-size: 14px;
+    width: 210px
+}
+
+.card-24-atts .att-row-label {
+    display: flex;
+    justify-content: center;
+    font-family: ultimateteamcondensed
+}
+
+.card-24-atts .att-row-label div {
+    flex: 0 0 16%;
+    text-align: center;
+    font-size: 15px
+}
+
+.card-24-atts .att-row-num {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px
+}
+
+.card-24-atts .att-row-num div {
+    flex: 0 0 16%;
+    text-align: center;
+    font-family: ultimateteamcondensed;
+    font-weight: 500;
+    font-size: 20px
+}
+
+.card-24-playstyles {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    bottom: 154px;
+    left: -4px;
+    z-index: 100
+}
+
+.card-24-playstyle-container {
+    width: 28px;
+    height: 27px;
+    position: relative
+}
+
+.card-24-playstyle-container .playstyle {
+    position: absolute;
+    top: 6px;
+    font-size: 26px;
+    left: 2px
+}
+
+.card-24-extra-info {
+    position: absolute;
+    right: -7px;
+    top: 69px;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    font-family: ultimateteam
+}
+
+.card-24-extra-info-txt {
+    border-radius: 6px;
+    width: 40px;
+    font-size: 14px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    background: #1c2426;
+    color: rgba(255, 255, 255, .87);
+    border: 1px solid;
+    z-index: 100;
+    text-align: center
+}
+
+.card-24-chemstyle {
+    position: absolute;
+    left: 22px;
+    top: 120px;
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100
+}
+
+.card-24-first-owner {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 15px solid;
+    position: absolute;
+    top: 152px;
+    left: 40px;
+    z-index: 100
+}
+
+.card-24-first-owner div {
+    position: absolute;
+    top: -16px;
+    font-size: 10px;
+    width: 12px;
+    left: -6px;
+    text-align: center;
+    font-family: ultimateteam
+}
+
+.card-24-pack {
+    position: relative;
+    width: 170px;
+    height: 255px;
+    line-height: 1.5;
+    background-size: 185px 260px;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.card-24-pack-face-alt {
+    position: absolute;
+    top: -5px;
+    overflow: hidden;
+    right: -5px;
+    width: 183px;
+    height: 255px;
+    z-index: 9
+}
+
+.card-24-pack-face-alt img {
+    width: 100%
+}
+
+.card-24-pack-face {
+    position: absolute;
+    right: 11px;
+    top: 38px;
+    overflow: hidden;
+    width: 125px;
+    height: 125px
+}
+
+.card-24-pack-face-inner {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.card-24-pack-face-inner img {
+    height: 125px
+}
+
+.card-24-pack-rating {
+    font-family: ultimateteamcondensed;
+    font-weight: 500;
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    left: 17px;
+    width: 37px;
+    text-align: center;
+    z-index: 11
+}
+
+.card-24-pack-position {
+    font-family: ultimateteamcondensed;
+    font-weight: 500;
+    font-size: 14px;
+    position: absolute;
+    top: 63px;
+    left: 17px;
+    width: 37px;
+    text-align: center;
+    z-index: 11
+}
+
+.card-24-pack-name {
+    font-family: ultimateteam;
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    top: 161px;
+    letter-spacing: -.75;
+    left: 13px;
+    width: 144px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    z-index: 11
+}
+
+.card-24-pack-chemstyle {
+    position: absolute;
+    left: 16px;
+    top: 74px;
+    width: 37px;
+    text-align: center;
+    font-size: 22px;
+    z-index: 100
+}
+
+.card-24-pack-extra-info {
+    position: absolute;
+    right: -12px;
+    top: 45px;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    font-family: ultimateteam
+}
+
+.card-24-pack-extra-info-txt {
+    border-radius: 6px;
+    width: 40px;
+    font-size: 12px;
+    padding-top: 2px;
+    background: #1c2426;
+    color: rgba(255, 255, 255, .87);
+    border: 1px solid;
+    z-index: 100;
+    text-align: center
+}
+
+.card-24-pack-extra-info-foot {
+    position: absolute;
+    right: -12px;
+    bottom: 80px;
+    border-radius: 6px;
+    width: 40px;
+    font-size: 10px;
+    padding-top: 2px;
+    background: #1c2426;
+    color: rgba(255, 255, 255, .87);
+    border: 1px solid;
+    z-index: 100;
+    text-align: center
+}
+
+.card-24-pack-foot-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: ultimateteam
+}
+
+.card-24-pack-foot-txt hr {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    width: 40%
+}
+
+.card-24-pack-playstyles {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    bottom: 96px;
+    left: -4px;
+    z-index: 100
+}
+
+.card-24-pack-playstyle-container {
+    width: 28px;
+    height: 24px;
+    position: relative
+}
+
+.card-24-pack-playstyle-container .playstyle {
+    position: absolute;
+    top: -2px;
+    font-size: 20px;
+    left: 0
+}
+
+.card-24-pack-details {
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 207px;
+    z-index: 10
+}
+
+.card-24-pack-details div {
+    flex: 0 0 24px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.card-24-pack-nation img {
+    width: 18px;
+    height: 11px
+}
+
+.card-24-pack-league img {
+    width: 16px;
+    height: 16px
+}
+
+.card-24-pack-club img {
+    width: 20px;
+    height: 20px
+}
+
+.card-24-pack-atts {
+    position: absolute;
+    top: 180px;
+    z-index: 9;
+    left: 17px;
+    font-size: 10px;
+    width: 140px
+}
+
+.card-24-pack-atts .att-row-label {
+    display: flex;
+    justify-content: center;
+    font-family: ultimateteamcondensed
+}
+
+.card-24-pack .att-row-label div {
+    flex: 0 0 16%;
+    text-align: center
+}
+
+.card-24-pack-atts .att-row-num {
+    display: flex;
+    justify-content: center;
+    margin-top: -5px
+}
+
+.card-24-pack .att-row-num div {
+    flex: 0 0 16%;
+    text-align: center;
+    font-family: ultimateteamcondensed;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 0
+}
+
+.card-24-builder {
+    position: relative;
+    width: 152px;
+    height: 215px;
+    background-size: 164px 229px;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.card-24-builder-face-alt {
+    position: absolute;
+    top: -10px;
+    overflow: hidden;
+    right: -4px;
+    width: 162px;
+    height: 226px;
+    z-index: 9
+}
+
+.card-24-builder-face-alt img {
+    width: 100%
+}
+
+.card-24-builder-face {
+    position: absolute;
+    right: 11px;
+    top: 28px;
+    overflow: hidden;
+    width: 110px;
+    height: 110px
+}
+
+.card-24-builder-face-inner {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.card-24-builder-face-inner img {
+    height: 110px
+}
+
+.card-24-builder-rating {
+    font-family: ultimateteamcondensed;
+    font-weight: 500;
+    font-size: 28px;
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    width: 37px;
+    text-align: center;
+    z-index: 11
+}
+
+.card-24-builder-position {
+    font-family: ultimateteamcondensed;
+    font-weight: 500;
+    font-size: 14px;
+    position: absolute;
+    top: 46px;
+    left: 14px;
+    width: 37px;
+    text-align: center;
+    z-index: 11
+}
+
+.card-24-builder-name {
+    font-family: ultimateteam;
+    font-weight: 500;
+    font-size: 14px;
+    position: absolute;
+    top: 138px;
+    letter-spacing: -.75;
+    left: 13px;
+    width: 128px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    z-index: 11
+}
+
+.card-24-builder-playstyles {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    bottom: 80px;
+    left: -4px;
+    z-index: 100
+}
+
+.card-24-builder-playstyle-container {
+    width: 24px;
+    height: 23px;
+    position: relative
+}
+
+.card-24-builder-playstyle-container .playstyle {
+    position: absolute;
+    top: -1px;
+    font-size: 16px;
+    left: 1px
+}
+
+.card-24-builder-details {
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 177px;
+    z-index: 10;
+    gap: 4px
+}
+
+.card-24-builder-details div {
+    flex: 0 0 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.card-24-builder-nation img {
+    width: 18px;
+    height: 11px
+}
+
+.card-24-builder-league img {
+    width: 16px;
+    height: 16px
+}
+
+.card-24-builder-club img {
+    width: 16px;
+    height: 16px
+}
+
+.card-24-builder-atts {
+    position: absolute;
+    top: 154px;
+    z-index: 9;
+    left: 15px;
+    font-size: 8px;
+    width: 124px
+}
+
+.card-24-builder-atts .att-row-label {
+    display: flex;
+    justify-content: center;
+    font-family: ultimateteamcondensed
+}
+
+.card-24-builder .att-row-label div {
+    flex: 0 0 16%;
+    text-align: center
+}
+
+.card-24-builder-atts .att-row-num {
+    display: flex;
+    justify-content: center;
+    margin-top: -5px
+}
+
+.card-24-builder .att-row-num div {
+    flex: 0 0 16%;
+    text-align: center;
+    font-family: ultimateteamcondensed;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 0
+}
+
+.card-24-small {
+    position: relative;
+    width: 90px;
+    height: 106px;
+    text-transform: uppercase;
+    line-height: normal;
+    background-repeat: no-repeat;
+    background-size: 92px 108px;
+    background-position: center
+}
+
+.card-24-small-face-alt {
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden
+}
+
+.card-24-small-face-alt img {
+    width: 100%
+}
+
+.card-24-small-face {
+    position: absolute;
+    right: 11px;
+    top: 19px;
+    overflow: hidden;
+    width: 56px;
+    height: 56px
+}
+
+.card-24-small-details {
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 78px;
+    z-index: 10;
+    left: 10px;
+    width: 70px
+}
+
+.card-24-small-details div {
+    flex: 0 0 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.card-24-small-face img {
+    height: 56px
+}
+
+.card-24-small-badge img {
+    height: 14px
+}
+
+.card-24-small-league img {
+    height: 14px
+}
+
+.card-24-small-flag img {
+    height: 10px
+}
+
+.card-24-small-playstyles {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    bottom: 22px;
+    left: -4px;
+    z-index: 100
+}
+
+.card-24-small-playstyle-container {
+    width: 28px;
+    height: 16px;
+    position: relative
+}
+
+.card-24-small-playstyle-container .playstyle {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    left: 0
+}
+
+.card-24-small-rating {
+    font-family: ultimateteamcondensed;
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    left: 14px;
+    width: 18px;
+    text-align: center
+}
+
+.card-24-small-position {
+    font-family: ultimateteamcondensed;
+    font-weight: 500;
+    font-size: 8px;
+    position: absolute;
+    top: 36px;
+    left: 14px;
+    width: 17px;
+    text-align: center
+}
+
+.card-24-small-chemstyle {
+    position: absolute;
+    left: 12px;
+    top: 40px;
+    width: 18px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 100
+}
+
+.card-24-gold, .card-24-pack-gold, .card-24-builder-gold {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/fc24-gold-2.png);
+    color: #40351d
+}
+
+.card-24-gold .card-24-first-owner div, .card-24-pack-gold .card-24-pack-first-owner div, .card-24-builder-gold .card-24-builder-first-owner div {
+    color: #cdb469
+}
+
+.card-24-gold .card-24-playstyle-container path, .card-24-small-gold .card-24-small-playstyle-container path, .card-24-pack-gold .card-24-pack-playstyle-container path, .card-24-builder-gold .card-24-builder-playstyle-container path {
+    fill: #cdb469
+}
+
+.card-24-gold .card-24-extra-info-txt, .card-24-gold .card-24-extra-info-foot, .card-24-gold .card-24-foot-txt, .card-24-pack-gold .card-24-pack-extra-info-txt, .card-24-pack-gold .card-24-pack-extra-info-foot, .card-24-pack-gold .card-24-pack-foot-txt, .card-24-builder-gold .card-24-builder-extra-info-txt, .card-24-builder-gold .card-24-builder-extra-info-foot, .card-24-builder-gold .card-24-builder-foot-txt {
+    border-color: #cdb469
+}
+
+.card-24-small-gold {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/fc24-gold-2.png);
+    color: #40351d
+}
+
+.card-24-gold-nr, .card-24-pack-gold-nr, .card-24-builder-gold-nr {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/fc24-gold-1.png);
+    color: #40351d
+}
+
+.card-24-gold-nr .card-24-first-owner div, .card-24-pack-gold-nr .card-24-pack-first-owner div, .card-24-builder-gold-nr .card-24-builder-first-owner div {
+    color: #cdb469
+}
+
+.card-24-gold-nr .card-24-playstyle-container path, .card-24-small-gold-nr .card-24-small-playstyle-container path, .card-24-pack-gold-nr .card-24-pack-playstyle-container path, .card-24-builder-gold-nr .card-24-builder-playstyle-container path {
+    fill: #cdb469
+}
+
+.card-24-gold-nr .card-24-extra-info-txt, .card-24-gold-nr .card-24-extra-info-foot, .card-24-gold-nr .card-24-foot-txt, .card-24-pack-gold-nr .card-24-pack-extra-info-txt, .card-24-pack-gold-nr .card-24-pack-extra-info-foot, .card-24-pack-gold-nr .card-24-pack-foot-txt, .card-24-builder-gold-nr .card-24-builder-extra-info-txt, .card-24-builder-gold-nr .card-24-builder-extra-info-foot, .card-24-builder-gold-nr .card-24-builder-foot-txt {
+    border-color: #cdb469
+}
+
+.card-24-small-gold-nr {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/fc24-gold-1.png);
+    color: #40351d
+}
+
+.card-24-silver, .card-24-pack-silver, .card-24-builder-silver {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/fc24-silver-2.png);
+    color: #2c2c2c
+}
+
+.card-24-silver .card-24-first-owner div, .card-24-pack-silver .card-24-pack-first-owner div, .card-24-builder-silver .card-24-builder-first-owner div {
+    color: #949493
+}
+
+.card-24-silver .card-24-playstyle-container path, .card-24-small-silver .card-24-small-playstyle-container path, .card-24-pack-silver .card-24-pack-playstyle-container path, .card-24-builder-silver .card-24-builder-playstyle-container path {
+    fill: #949493
+}
+
+.card-24-silver .card-24-extra-info-txt, .card-24-silver .card-24-extra-info-foot, .card-24-silver .card-24-foot-txt, .card-24-pack-silver .card-24-pack-extra-info-txt, .card-24-pack-silver .card-24-pack-extra-info-foot, .card-24-pack-silver .card-24-pack-foot-txt, .card-24-builder-silver .card-24-builder-extra-info-txt, .card-24-builder-silver .card-24-builder-extra-info-foot, .card-24-builder-silver .card-24-builder-foot-txt {
+    border-color: #949493
+}
+
+.card-24-small-silver {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/fc24-silver-2.png);
+    color: #2c2c2c
+}
+
+.card-24-silver-nr, .card-24-pack-silver-nr, .card-24-builder-silver-nr {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/fc24-silver-1.png);
+    color: #2c2c2c
+}
+
+.card-24-silver-nr .card-24-first-owner div, .card-24-pack-silver-nr .card-24-pack-first-owner div, .card-24-builder-silver-nr .card-24-builder-first-owner div {
+    color: #949493
+}
+
+.card-24-silver-nr .card-24-playstyle-container path, .card-24-small-silver-nr .card-24-small-playstyle-container path, .card-24-pack-silver-nr .card-24-pack-playstyle-container path, .card-24-builder-silver-nr .card-24-builder-playstyle-container path {
+    fill: #949493
+}
+
+.card-24-silver-nr .card-24-extra-info-txt, .card-24-silver-nr .card-24-extra-info-foot, .card-24-silver-nr .card-24-foot-txt, .card-24-pack-silver-nr .card-24-pack-extra-info-txt, .card-24-pack-silver-nr .card-24-pack-extra-info-foot, .card-24-pack-silver-nr .card-24-pack-foot-txt, .card-24-builder-silver-nr .card-24-builder-extra-info-txt, .card-24-builder-silver-nr .card-24-builder-extra-info-foot, .card-24-builder-silver-nr .card-24-builder-foot-txt {
+    border-color: #949493
+}
+
+.card-24-small-silver-nr {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/fc24-silver-1.png);
+    color: #2c2c2c
+}
+
+.card-24-bronze, .card-24-pack-bronze, .card-24-builder-bronze {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/fc24-bronze-2.png);
+    color: #3e281c
+}
+
+.card-24-bronze .card-24-first-owner div, .card-24-pack-bronze .card-24-pack-first-owner div, .card-24-builder-bronze .card-24-builder-first-owner div {
+    color: #b88061
+}
+
+.card-24-bronze .card-24-playstyle-container path, .card-24-small-bronze .card-24-small-playstyle-container path, .card-24-pack-bronze .card-24-pack-playstyle-container path, .card-24-builder-bronze .card-24-builder-playstyle-container path {
+    fill: #b88061
+}
+
+.card-24-bronze .card-24-extra-info-txt, .card-24-bronze .card-24-extra-info-foot, .card-24-bronze .card-24-foot-txt, .card-24-pack-bronze .card-24-pack-extra-info-txt, .card-24-pack-bronze .card-24-pack-extra-info-foot, .card-24-pack-bronze .card-24-pack-foot-txt, .card-24-builder-bronze .card-24-builder-extra-info-txt, .card-24-builder-bronze .card-24-builder-extra-info-foot, .card-24-builder-bronze .card-24-builder-foot-txt {
+    border-color: #b88061
+}
+
+.card-24-small-bronze {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/fc24-bronze-2.png);
+    color: #3e281c
+}
+
+.card-24-bronze-nr, .card-24-pack-bronze-nr, .card-24-builder-bronze-nr {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/fc24-bronze-1.png);
+    color: #3e281c
+}
+
+.card-24-bronze-nr .card-24-first-owner div, .card-24-pack-bronze-nr .card-24-pack-first-owner div, .card-24-builder-bronze-nr .card-24-builder-first-owner div {
+    color: #b88061
+}
+
+.card-24-bronze-nr .card-24-playstyle-container path, .card-24-small-bronze-nr .card-24-small-playstyle-container path, .card-24-pack-bronze-nr .card-24-pack-playstyle-container path, .card-24-builder-bronze-nr .card-24-builder-playstyle-container path {
+    fill: #b88061
+}
+
+.card-24-bronze-nr .card-24-extra-info-txt, .card-24-bronze-nr .card-24-extra-info-foot, .card-24-bronze-nr .card-24-foot-txt, .card-24-pack-bronze-nr .card-24-pack-extra-info-txt, .card-24-pack-bronze-nr .card-24-pack-extra-info-foot, .card-24-pack-bronze-nr .card-24-pack-foot-txt, .card-24-builder-bronze-nr .card-24-builder-extra-info-txt, .card-24-builder-bronze-nr .card-24-builder-extra-info-foot, .card-24-builder-bronze-nr .card-24-builder-foot-txt {
+    border-color: #b88061
+}
+
+.card-24-small-bronze-nr {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/fc24-bronze-1.png);
+    color: #3e281c
+}
+
+.card-24-goldif, .card-24-pack-goldif, .card-24-builder-goldif {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/gold-if.png);
+    color: #f6db7b
+}
+
+.card-24-goldif .card-24-first-owner div, .card-24-pack-goldif .card-24-pack-first-owner div, .card-24-builder-goldif .card-24-builder-first-owner div {
+    color: #0f0d0d
+}
+
+.card-24-goldif .card-24-playstyle-container path, .card-24-small-goldif .card-24-small-playstyle-container path, .card-24-pack-goldif .card-24-pack-playstyle-container path, .card-24-builder-goldif .card-24-builder-playstyle-container path {
+    fill: #0f0d0d
+}
+
+.card-24-goldif .card-24-extra-info-txt, .card-24-goldif .card-24-extra-info-foot, .card-24-goldif .card-24-foot-txt, .card-24-pack-goldif .card-24-pack-extra-info-txt, .card-24-pack-goldif .card-24-pack-extra-info-foot, .card-24-pack-goldif .card-24-pack-foot-txt, .card-24-builder-goldif .card-24-builder-extra-info-txt, .card-24-builder-goldif .card-24-builder-extra-info-foot, .card-24-builder-goldif .card-24-builder-foot-txt {
+    border-color: #f6db7b
+}
+
+.card-24-small-goldif {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/gold-if.png);
+    color: #f6db7b
+}
+
+.card-24-silverif, .card-24-pack-silverif, .card-24-builder-silverif {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/silver-if.png);
+    color: #e0e0e0
+}
+
+.card-24-silverif .card-24-first-owner div, .card-24-pack-silverif .card-24-pack-first-owner div, .card-24-builder-silverif .card-24-builder-first-owner div {
+    color: #0f0d0d
+}
+
+.card-24-silverif .card-24-playstyle-container path, .card-24-small-silverif .card-24-small-playstyle-container path, .card-24-pack-silverif .card-24-pack-playstyle-container path, .card-24-builder-silverif .card-24-builder-playstyle-container path {
+    fill: #0f0d0d
+}
+
+.card-24-silverif .card-24-extra-info-txt, .card-24-silverif .card-24-extra-info-foot, .card-24-silverif .card-24-foot-txt, .card-24-pack-silverif .card-24-pack-extra-info-txt, .card-24-pack-silverif .card-24-pack-extra-info-foot, .card-24-pack-silverif .card-24-pack-foot-txt, .card-24-builder-silverif .card-24-builder-extra-info-txt, .card-24-builder-silverif .card-24-builder-extra-info-foot, .card-24-builder-silverif .card-24-builder-foot-txt {
+    border-color: #e0e0e0
+}
+
+.card-24-small-silverif {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/silver-if.png);
+    color: #e0e0e0
+}
+
+.card-24-bronzeif, .card-24-pack-bronzeif, .card-24-builder-bronzeif {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/bronze-if.png);
+    color: #d98b68
+}
+
+.card-24-bronzeif .card-24-first-owner div, .card-24-pack-bronzeif .card-24-pack-first-owner div, .card-24-builder-bronzeif .card-24-builder-first-owner div {
+    color: #0f0d0d
+}
+
+.card-24-bronzeif .card-24-playstyle-container path, .card-24-small-bronzeif .card-24-small-playstyle-container path, .card-24-pack-bronzeif .card-24-pack-playstyle-container path, .card-24-builder-bronzeif .card-24-builder-playstyle-container path {
+    fill: #0f0d0d
+}
+
+.card-24-bronzeif .card-24-extra-info-txt, .card-24-bronzeif .card-24-extra-info-foot, .card-24-bronzeif .card-24-foot-txt, .card-24-pack-bronzeif .card-24-pack-extra-info-txt, .card-24-pack-bronzeif .card-24-pack-extra-info-foot, .card-24-pack-bronzeif .card-24-pack-foot-txt, .card-24-builder-bronzeif .card-24-builder-extra-info-txt, .card-24-builder-bronzeif .card-24-builder-extra-info-foot, .card-24-builder-bronzeif .card-24-builder-foot-txt {
+    border-color: #d98b68
+}
+
+.card-24-small-bronzeif {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/bronze-if.png);
+    color: #d98b68
+}
+
+.card-24-hero, .card-24-pack-hero, .card-24-builder-hero {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/fc24-hero-2.png);
+    color: #fff
+}
+
+.card-24-hero .card-24-first-owner div, .card-24-pack-hero .card-24-pack-first-owner div, .card-24-builder-hero .card-24-builder-first-owner div {
+    color: #003d96
+}
+
+.card-24-hero .card-24-playstyle-container path, .card-24-small-hero .card-24-small-playstyle-container path, .card-24-pack-hero .card-24-pack-playstyle-container path, .card-24-builder-hero .card-24-builder-playstyle-container path {
+    fill: #003d96
+}
+
+.card-24-hero .card-24-extra-info-txt, .card-24-hero .card-24-extra-info-foot, .card-24-hero .card-24-foot-txt, .card-24-pack-hero .card-24-pack-extra-info-txt, .card-24-pack-hero .card-24-pack-extra-info-foot, .card-24-pack-hero .card-24-pack-foot-txt, .card-24-builder-hero .card-24-builder-extra-info-txt, .card-24-builder-hero .card-24-builder-extra-info-foot, .card-24-builder-hero .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-hero {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/fc24-hero-2.png);
+    color: #fff
+}
+
+.card-24-futhero, .card-24-pack-futhero, .card-24-builder-futhero {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/hero.png);
+    color: #fff
+}
+
+.card-24-futhero .card-24-first-owner div, .card-24-pack-futhero .card-24-pack-first-owner div, .card-24-builder-futhero .card-24-builder-first-owner div {
+    color: #d86400
+}
+
+.card-24-futhero .card-24-playstyle-container path, .card-24-small-futhero .card-24-small-playstyle-container path, .card-24-pack-futhero .card-24-pack-playstyle-container path, .card-24-builder-futhero .card-24-builder-playstyle-container path {
+    fill: #d86400
+}
+
+.card-24-futhero .card-24-extra-info-txt, .card-24-futhero .card-24-extra-info-foot, .card-24-futhero .card-24-foot-txt, .card-24-pack-futhero .card-24-pack-extra-info-txt, .card-24-pack-futhero .card-24-pack-extra-info-foot, .card-24-pack-futhero .card-24-pack-foot-txt, .card-24-builder-futhero .card-24-builder-extra-info-txt, .card-24-builder-futhero .card-24-builder-extra-info-foot, .card-24-builder-futhero .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-futhero {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/hero.png);
+    color: #fff
+}
+
+.card-24-evolv1, .card-24-pack-evolv1, .card-24-builder-evolv1 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/evo-lv-1.png);
+    color: #fcfcf7
+}
+
+.card-24-evolv1 .card-24-first-owner div, .card-24-pack-evolv1 .card-24-pack-first-owner div, .card-24-builder-evolv1 .card-24-builder-first-owner div {
+    color: #00634c
+}
+
+.card-24-evolv1 .card-24-playstyle-container path, .card-24-small-evolv1 .card-24-small-playstyle-container path, .card-24-pack-evolv1 .card-24-pack-playstyle-container path, .card-24-builder-evolv1 .card-24-builder-playstyle-container path {
+    fill: #00634c
+}
+
+.card-24-evolv1 .card-24-extra-info-txt, .card-24-evolv1 .card-24-extra-info-foot, .card-24-evolv1 .card-24-foot-txt, .card-24-pack-evolv1 .card-24-pack-extra-info-txt, .card-24-pack-evolv1 .card-24-pack-extra-info-foot, .card-24-pack-evolv1 .card-24-pack-foot-txt, .card-24-builder-evolv1 .card-24-builder-extra-info-txt, .card-24-builder-evolv1 .card-24-builder-extra-info-foot, .card-24-builder-evolv1 .card-24-builder-foot-txt {
+    border-color: #fcfcf7
+}
+
+.card-24-small-evolv1 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/evo-lv-1.png);
+    color: #fcfcf7
+}
+
+.card-24-evolv2, .card-24-pack-evolv2, .card-24-builder-evolv2 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/evo-lv-2.png);
+    color: #ffebbc
+}
+
+.card-24-evolv2 .card-24-first-owner div, .card-24-pack-evolv2 .card-24-pack-first-owner div, .card-24-builder-evolv2 .card-24-builder-first-owner div {
+    color: #005c45
+}
+
+.card-24-evolv2 .card-24-playstyle-container path, .card-24-small-evolv2 .card-24-small-playstyle-container path, .card-24-pack-evolv2 .card-24-pack-playstyle-container path, .card-24-builder-evolv2 .card-24-builder-playstyle-container path {
+    fill: #005c45
+}
+
+.card-24-evolv2 .card-24-extra-info-txt, .card-24-evolv2 .card-24-extra-info-foot, .card-24-evolv2 .card-24-foot-txt, .card-24-pack-evolv2 .card-24-pack-extra-info-txt, .card-24-pack-evolv2 .card-24-pack-extra-info-foot, .card-24-pack-evolv2 .card-24-pack-foot-txt, .card-24-builder-evolv2 .card-24-builder-extra-info-txt, .card-24-builder-evolv2 .card-24-builder-extra-info-foot, .card-24-builder-evolv2 .card-24-builder-foot-txt {
+    border-color: #ffebbc
+}
+
+.card-24-small-evolv2 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/evo-lv-2.png);
+    color: #ffebbc
+}
+
+.card-24-evolv3, .card-24-pack-evolv3, .card-24-builder-evolv3 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/evo-lv-3.png);
+    color: #f8d47f
+}
+
+.card-24-evolv3 .card-24-first-owner div, .card-24-pack-evolv3 .card-24-pack-first-owner div, .card-24-builder-evolv3 .card-24-builder-first-owner div {
+    color: #005741
+}
+
+.card-24-evolv3 .card-24-playstyle-container path, .card-24-small-evolv3 .card-24-small-playstyle-container path, .card-24-pack-evolv3 .card-24-pack-playstyle-container path, .card-24-builder-evolv3 .card-24-builder-playstyle-container path {
+    fill: #005741
+}
+
+.card-24-evolv3 .card-24-extra-info-txt, .card-24-evolv3 .card-24-extra-info-foot, .card-24-evolv3 .card-24-foot-txt, .card-24-pack-evolv3 .card-24-pack-extra-info-txt, .card-24-pack-evolv3 .card-24-pack-extra-info-foot, .card-24-pack-evolv3 .card-24-pack-foot-txt, .card-24-builder-evolv3 .card-24-builder-extra-info-txt, .card-24-builder-evolv3 .card-24-builder-extra-info-foot, .card-24-builder-evolv3 .card-24-builder-foot-txt {
+    border-color: #f8d47f
+}
+
+.card-24-small-evolv3 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/evo-lv-3.png);
+    color: #f8d47f
+}
+
+.card-24-evolv4, .card-24-pack-evolv4, .card-24-builder-evolv4 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/evo-lv-4.png);
+    color: #ffd563
+}
+
+.card-24-evolv4 .card-24-first-owner div, .card-24-pack-evolv4 .card-24-pack-first-owner div, .card-24-builder-evolv4 .card-24-builder-first-owner div {
+    color: #004836
+}
+
+.card-24-evolv4 .card-24-playstyle-container path, .card-24-small-evolv4 .card-24-small-playstyle-container path, .card-24-pack-evolv4 .card-24-pack-playstyle-container path, .card-24-builder-evolv4 .card-24-builder-playstyle-container path {
+    fill: #004836
+}
+
+.card-24-evolv4 .card-24-extra-info-txt, .card-24-evolv4 .card-24-extra-info-foot, .card-24-evolv4 .card-24-foot-txt, .card-24-pack-evolv4 .card-24-pack-extra-info-txt, .card-24-pack-evolv4 .card-24-pack-extra-info-foot, .card-24-pack-evolv4 .card-24-pack-foot-txt, .card-24-builder-evolv4 .card-24-builder-extra-info-txt, .card-24-builder-evolv4 .card-24-builder-extra-info-foot, .card-24-builder-evolv4 .card-24-builder-foot-txt {
+    border-color: #ffd563
+}
+
+.card-24-small-evolv4 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/evo-lv-4.png);
+    color: #ffd563
+}
+
+.card-24-icon, .card-24-pack-icon, .card-24-builder-icon {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/12.png);
+    color: #50442b
+}
+
+.card-24-icon .card-24-first-owner div, .card-24-pack-icon .card-24-pack-first-owner div, .card-24-builder-icon .card-24-builder-first-owner div {
+    color: #fbf9fc
+}
+
+.card-24-icon .card-24-playstyle-container path, .card-24-small-icon .card-24-small-playstyle-container path, .card-24-pack-icon .card-24-pack-playstyle-container path, .card-24-builder-icon .card-24-builder-playstyle-container path {
+    fill: #fbf9fc
+}
+
+.card-24-icon .card-24-extra-info-txt, .card-24-icon .card-24-extra-info-foot, .card-24-icon .card-24-foot-txt, .card-24-pack-icon .card-24-pack-extra-info-txt, .card-24-pack-icon .card-24-pack-extra-info-foot, .card-24-pack-icon .card-24-pack-foot-txt, .card-24-builder-icon .card-24-builder-extra-info-txt, .card-24-builder-icon .card-24-builder-extra-info-foot, .card-24-builder-icon .card-24-builder-foot-txt {
+    border-color: #50442b
+}
+
+.card-24-small-icon {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/12.png);
+    color: #50442b
+}
+
+.card-24-13, .card-24-pack-13, .card-24-builder-13 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/13.png);
+    color: #fff
+}
+
+.card-24-13 .card-24-first-owner div, .card-24-pack-13 .card-24-pack-first-owner div, .card-24-builder-13 .card-24-builder-first-owner div {
+    color: #0fa900
+}
+
+.card-24-13 .card-24-playstyle-container path, .card-24-small-13 .card-24-small-playstyle-container path, .card-24-pack-13 .card-24-pack-playstyle-container path, .card-24-builder-13 .card-24-builder-playstyle-container path {
+    fill: #333433
+}
+
+.card-24-13 .card-24-extra-info-txt, .card-24-13 .card-24-extra-info-foot, .card-24-13 .card-24-foot-txt, .card-24-pack-13 .card-24-pack-extra-info-txt, .card-24-pack-13 .card-24-pack-extra-info-foot, .card-24-pack-13 .card-24-pack-foot-txt, .card-24-builder-13 .card-24-builder-extra-info-txt, .card-24-builder-13 .card-24-builder-extra-info-foot, .card-24-builder-13 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-13 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/13.png);
+    color: #fff
+}
+
+.card-24-15, .card-24-pack-15, .card-24-builder-15 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/15.png);
+    color: #fff
+}
+
+.card-24-15 .card-24-first-owner div, .card-24-pack-15 .card-24-pack-first-owner div, .card-24-builder-15 .card-24-builder-first-owner div {
+    color: #aeaeae
+}
+
+.card-24-15 .card-24-playstyle-container path, .card-24-small-15 .card-24-small-playstyle-container path, .card-24-pack-15 .card-24-pack-playstyle-container path, .card-24-builder-15 .card-24-builder-playstyle-container path {
+    fill: #333433
+}
+
+.card-24-15 .card-24-extra-info-txt, .card-24-15 .card-24-extra-info-foot, .card-24-15 .card-24-foot-txt, .card-24-pack-15 .card-24-pack-extra-info-txt, .card-24-pack-15 .card-24-pack-extra-info-foot, .card-24-pack-15 .card-24-pack-foot-txt, .card-24-builder-15 .card-24-builder-extra-info-txt, .card-24-builder-15 .card-24-builder-extra-info-foot, .card-24-builder-15 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-15 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/15.png);
+    color: #fff
+}
+
+.card-24-90, .card-24-pack-90, .card-24-builder-90 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/90.png);
+    color: #ffff17
+}
+
+.card-24-90 .card-24-first-owner div, .card-24-pack-90 .card-24-pack-first-owner div, .card-24-builder-90 .card-24-builder-first-owner div {
+    color: #17bdb1
+}
+
+.card-24-90 .card-24-playstyle-container path, .card-24-small-90 .card-24-small-playstyle-container path, .card-24-pack-90 .card-24-pack-playstyle-container path, .card-24-builder-90 .card-24-builder-playstyle-container path {
+    fill: #0c3234
+}
+
+.card-24-90 .card-24-extra-info-txt, .card-24-90 .card-24-extra-info-foot, .card-24-90 .card-24-foot-txt, .card-24-pack-90 .card-24-pack-extra-info-txt, .card-24-pack-90 .card-24-pack-extra-info-foot, .card-24-pack-90 .card-24-pack-foot-txt, .card-24-builder-90 .card-24-builder-extra-info-txt, .card-24-builder-90 .card-24-builder-extra-info-foot, .card-24-builder-90 .card-24-builder-foot-txt {
+    border-color: #17bdb1
+}
+
+.card-24-small-90 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/90.png);
+    color: #ffff17
+}
+
+.card-24-182, .card-24-pack-182, .card-24-builder-182 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/182.png);
+    color: #fff
+}
+
+.card-24-182 .card-24-first-owner div, .card-24-pack-182 .card-24-pack-first-owner div, .card-24-builder-182 .card-24-builder-first-owner div {
+    color: #5b5b5b
+}
+
+.card-24-182 .card-24-playstyle-container path, .card-24-small-182 .card-24-small-playstyle-container path, .card-24-pack-182 .card-24-pack-playstyle-container path, .card-24-builder-182 .card-24-builder-playstyle-container path {
+    fill: #171e15
+}
+
+.card-24-182 .card-24-extra-info-txt, .card-24-182 .card-24-extra-info-foot, .card-24-182 .card-24-foot-txt, .card-24-pack-182 .card-24-pack-extra-info-txt, .card-24-pack-182 .card-24-pack-extra-info-foot, .card-24-pack-182 .card-24-pack-foot-txt, .card-24-builder-182 .card-24-builder-extra-info-txt, .card-24-builder-182 .card-24-builder-extra-info-foot, .card-24-builder-182 .card-24-builder-foot-txt {
+    border-color: #5b5b5b
+}
+
+.card-24-small-182 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/182.png);
+    color: #fff
+}
+
+.card-24-172, .card-24-pack-172, .card-24-builder-172 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/172.png);
+    color: #fff
+}
+
+.card-24-172 .card-24-first-owner div, .card-24-pack-172 .card-24-pack-first-owner div, .card-24-builder-172 .card-24-builder-first-owner div {
+    color: #4193d2
+}
+
+.card-24-172 .card-24-playstyle-container path, .card-24-small-172 .card-24-small-playstyle-container path, .card-24-pack-172 .card-24-pack-playstyle-container path, .card-24-builder-172 .card-24-builder-playstyle-container path {
+    fill: #055ea2
+}
+
+.card-24-172 .card-24-extra-info-txt, .card-24-172 .card-24-extra-info-foot, .card-24-172 .card-24-foot-txt, .card-24-pack-172 .card-24-pack-extra-info-txt, .card-24-pack-172 .card-24-pack-extra-info-foot, .card-24-pack-172 .card-24-pack-foot-txt, .card-24-builder-172 .card-24-builder-extra-info-txt, .card-24-builder-172 .card-24-builder-extra-info-foot, .card-24-builder-172 .card-24-builder-foot-txt {
+    border-color: #4193d2
+}
+
+.card-24-small-172 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/172.png);
+    color: #fff
+}
+
+.card-24-171, .card-24-pack-171, .card-24-builder-171 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/171.png);
+    color: #fff
+}
+
+.card-24-171 .card-24-first-owner div, .card-24-pack-171 .card-24-pack-first-owner div, .card-24-builder-171 .card-24-builder-first-owner div {
+    color: #4193d2
+}
+
+.card-24-171 .card-24-playstyle-container path, .card-24-small-171 .card-24-small-playstyle-container path, .card-24-pack-171 .card-24-pack-playstyle-container path, .card-24-builder-171 .card-24-builder-playstyle-container path {
+    fill: #055ea2
+}
+
+.card-24-171 .card-24-extra-info-txt, .card-24-171 .card-24-extra-info-foot, .card-24-171 .card-24-foot-txt, .card-24-pack-171 .card-24-pack-extra-info-txt, .card-24-pack-171 .card-24-pack-extra-info-foot, .card-24-pack-171 .card-24-pack-foot-txt, .card-24-builder-171 .card-24-builder-extra-info-txt, .card-24-builder-171 .card-24-builder-extra-info-foot, .card-24-builder-171 .card-24-builder-foot-txt {
+    border-color: #4193d2
+}
+
+.card-24-small-171 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/171.png);
+    color: #fff
+}
+
+.card-24-150, .card-24-pack-150, .card-24-builder-150 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/150.png);
+    color: #fcfcf7
+}
+
+.card-24-150 .card-24-first-owner div, .card-24-pack-150 .card-24-pack-first-owner div, .card-24-builder-150 .card-24-builder-first-owner div {
+    color: #a6a6a1
+}
+
+.card-24-150 .card-24-playstyle-container path, .card-24-small-150 .card-24-small-playstyle-container path, .card-24-pack-150 .card-24-pack-playstyle-container path, .card-24-builder-150 .card-24-builder-playstyle-container path {
+    fill: #313432
+}
+
+.card-24-150 .card-24-extra-info-txt, .card-24-150 .card-24-extra-info-foot, .card-24-150 .card-24-foot-txt, .card-24-pack-150 .card-24-pack-extra-info-txt, .card-24-pack-150 .card-24-pack-extra-info-foot, .card-24-pack-150 .card-24-pack-foot-txt, .card-24-builder-150 .card-24-builder-extra-info-txt, .card-24-builder-150 .card-24-builder-extra-info-foot, .card-24-builder-150 .card-24-builder-foot-txt {
+    border-color: #a6a6a1
+}
+
+.card-24-small-150 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/150.png);
+    color: #fcfcf7
+}
+
+.card-24-91, .card-24-pack-91, .card-24-builder-91 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/91.png);
+    color: #fffdf4
+}
+
+.card-24-91 .card-24-first-owner div, .card-24-pack-91 .card-24-pack-first-owner div, .card-24-builder-91 .card-24-builder-first-owner div {
+    color: #352a31
+}
+
+.card-24-91 .card-24-playstyle-container path, .card-24-small-91 .card-24-small-playstyle-container path, .card-24-pack-91 .card-24-pack-playstyle-container path, .card-24-builder-91 .card-24-builder-playstyle-container path {
+    fill: #352a31
+}
+
+.card-24-91 .card-24-extra-info-txt, .card-24-91 .card-24-extra-info-foot, .card-24-91 .card-24-foot-txt, .card-24-pack-91 .card-24-pack-extra-info-txt, .card-24-pack-91 .card-24-pack-extra-info-foot, .card-24-pack-91 .card-24-pack-foot-txt, .card-24-builder-91 .card-24-builder-extra-info-txt, .card-24-builder-91 .card-24-builder-extra-info-foot, .card-24-builder-91 .card-24-builder-foot-txt {
+    border-color: #ffdb27
+}
+
+.card-24-small-91 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/91.png);
+    color: #fffdf4
+}
+
+.card-24-87, .card-24-pack-87, .card-24-builder-87 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/87.png);
+    color: #fcfcf7
+}
+
+.card-24-87 .card-24-first-owner div, .card-24-pack-87 .card-24-pack-first-owner div, .card-24-builder-87 .card-24-builder-first-owner div {
+    color: #a6a6a1
+}
+
+.card-24-87 .card-24-playstyle-container path, .card-24-small-87 .card-24-small-playstyle-container path, .card-24-pack-87 .card-24-pack-playstyle-container path, .card-24-builder-87 .card-24-builder-playstyle-container path {
+    fill: #313432
+}
+
+.card-24-87 .card-24-extra-info-txt, .card-24-87 .card-24-extra-info-foot, .card-24-87 .card-24-foot-txt, .card-24-pack-87 .card-24-pack-extra-info-txt, .card-24-pack-87 .card-24-pack-extra-info-foot, .card-24-pack-87 .card-24-pack-foot-txt, .card-24-builder-87 .card-24-builder-extra-info-txt, .card-24-builder-87 .card-24-builder-extra-info-foot, .card-24-builder-87 .card-24-builder-foot-txt {
+    border-color: #a6a6a1
+}
+
+.card-24-small-87 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/87.png);
+    color: #fcfcf7
+}
+
+.card-24-51, .card-24-pack-51, .card-24-builder-51 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/51.png);
+    color: #fcfcf7
+}
+
+.card-24-51 .card-24-first-owner div, .card-24-pack-51 .card-24-pack-first-owner div, .card-24-builder-51 .card-24-builder-first-owner div {
+    color: #a6a6a1
+}
+
+.card-24-51 .card-24-playstyle-container path, .card-24-small-51 .card-24-small-playstyle-container path, .card-24-pack-51 .card-24-pack-playstyle-container path, .card-24-builder-51 .card-24-builder-playstyle-container path {
+    fill: #762161
+}
+
+.card-24-51 .card-24-extra-info-txt, .card-24-51 .card-24-extra-info-foot, .card-24-51 .card-24-foot-txt, .card-24-pack-51 .card-24-pack-extra-info-txt, .card-24-pack-51 .card-24-pack-extra-info-foot, .card-24-pack-51 .card-24-pack-foot-txt, .card-24-builder-51 .card-24-builder-extra-info-txt, .card-24-builder-51 .card-24-builder-extra-info-foot, .card-24-builder-51 .card-24-builder-foot-txt {
+    border-color: #a6a6a1
+}
+
+.card-24-small-51 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/51.png);
+    color: #fcfcf7
+}
+
+.card-24-25, .card-24-pack-25, .card-24-builder-25 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/25.png);
+    color: #00f6ff
+}
+
+.card-24-25 .card-24-first-owner div, .card-24-pack-25 .card-24-pack-first-owner div, .card-24-builder-25 .card-24-builder-first-owner div {
+    color: #0063aa
+}
+
+.card-24-25 .card-24-playstyle-container path, .card-24-small-25 .card-24-small-playstyle-container path, .card-24-pack-25 .card-24-pack-playstyle-container path, .card-24-builder-25 .card-24-builder-playstyle-container path {
+    fill: #491e6f
+}
+
+.card-24-25 .card-24-extra-info-txt, .card-24-25 .card-24-extra-info-foot, .card-24-25 .card-24-foot-txt, .card-24-pack-25 .card-24-pack-extra-info-txt, .card-24-pack-25 .card-24-pack-extra-info-foot, .card-24-pack-25 .card-24-pack-foot-txt, .card-24-builder-25 .card-24-builder-extra-info-txt, .card-24-builder-25 .card-24-builder-extra-info-foot, .card-24-builder-25 .card-24-builder-foot-txt {
+    border-color: #0063aa
+}
+
+.card-24-small-25 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/25.png);
+    color: #00f6ff
+}
+
+.card-24-8, .card-24-pack-8, .card-24-builder-8 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/8.png);
+    color: #f2f2f2
+}
+
+.card-24-8 .card-24-first-owner div, .card-24-pack-8 .card-24-pack-first-owner div, .card-24-builder-8 .card-24-builder-first-owner div {
+    color: #236b25
+}
+
+.card-24-8 .card-24-playstyle-container path, .card-24-small-8 .card-24-small-playstyle-container path, .card-24-pack-8 .card-24-pack-playstyle-container path, .card-24-builder-8 .card-24-builder-playstyle-container path {
+    fill: #071a05
+}
+
+.card-24-8 .card-24-extra-info-txt, .card-24-8 .card-24-extra-info-foot, .card-24-8 .card-24-foot-txt, .card-24-pack-8 .card-24-pack-extra-info-txt, .card-24-pack-8 .card-24-pack-extra-info-foot, .card-24-pack-8 .card-24-pack-foot-txt, .card-24-builder-8 .card-24-builder-extra-info-txt, .card-24-builder-8 .card-24-builder-extra-info-foot, .card-24-builder-8 .card-24-builder-foot-txt {
+    border-color: #236b25
+}
+
+.card-24-small-8 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/8.png);
+    color: #f2f2f2
+}
+
+.card-24-43, .card-24-pack-43, .card-24-builder-43 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/43.png);
+    color: #fafafa
+}
+
+.card-24-43 .card-24-first-owner div, .card-24-pack-43 .card-24-pack-first-owner div, .card-24-builder-43 .card-24-builder-first-owner div {
+    color: #4d1dd1
+}
+
+.card-24-43 .card-24-playstyle-container path, .card-24-small-43 .card-24-small-playstyle-container path, .card-24-pack-43 .card-24-pack-playstyle-container path, .card-24-builder-43 .card-24-builder-playstyle-container path {
+    fill: #4d1dd1
+}
+
+.card-24-43 .card-24-extra-info-txt, .card-24-43 .card-24-extra-info-foot, .card-24-43 .card-24-foot-txt, .card-24-pack-43 .card-24-pack-extra-info-txt, .card-24-pack-43 .card-24-pack-extra-info-foot, .card-24-pack-43 .card-24-pack-foot-txt, .card-24-builder-43 .card-24-builder-extra-info-txt, .card-24-builder-43 .card-24-builder-extra-info-foot, .card-24-builder-43 .card-24-builder-foot-txt {
+    border-color: #fafafa
+}
+
+.card-24-small-43 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/43.png);
+    color: #fafafa
+}
+
+.card-24-42, .card-24-pack-42, .card-24-builder-42 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/42.png);
+    color: #f5f5f5
+}
+
+.card-24-42 .card-24-first-owner div, .card-24-pack-42 .card-24-pack-first-owner div, .card-24-builder-42 .card-24-builder-first-owner div {
+    color: #191919
+}
+
+.card-24-42 .card-24-playstyle-container path, .card-24-small-42 .card-24-small-playstyle-container path, .card-24-pack-42 .card-24-pack-playstyle-container path, .card-24-builder-42 .card-24-builder-playstyle-container path {
+    fill: #191919
+}
+
+.card-24-42 .card-24-extra-info-txt, .card-24-42 .card-24-extra-info-foot, .card-24-42 .card-24-foot-txt, .card-24-pack-42 .card-24-pack-extra-info-txt, .card-24-pack-42 .card-24-pack-extra-info-foot, .card-24-pack-42 .card-24-pack-foot-txt, .card-24-builder-42 .card-24-builder-extra-info-txt, .card-24-builder-42 .card-24-builder-extra-info-foot, .card-24-builder-42 .card-24-builder-foot-txt {
+    border-color: #f5f5f5
+}
+
+.card-24-small-42 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/42.png);
+    color: #f5f5f5
+}
+
+.card-24-45, .card-24-pack-45, .card-24-builder-45 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/45.png);
+    color: #fff
+}
+
+.card-24-45 .card-24-first-owner div, .card-24-pack-45 .card-24-pack-first-owner div, .card-24-builder-45 .card-24-builder-first-owner div {
+    color: #000
+}
+
+.card-24-45 .card-24-playstyle-container path, .card-24-small-45 .card-24-small-playstyle-container path, .card-24-pack-45 .card-24-pack-playstyle-container path, .card-24-builder-45 .card-24-builder-playstyle-container path {
+    fill: #000
+}
+
+.card-24-45 .card-24-extra-info-txt, .card-24-45 .card-24-extra-info-foot, .card-24-45 .card-24-foot-txt, .card-24-pack-45 .card-24-pack-extra-info-txt, .card-24-pack-45 .card-24-pack-extra-info-foot, .card-24-pack-45 .card-24-pack-foot-txt, .card-24-builder-45 .card-24-builder-extra-info-txt, .card-24-builder-45 .card-24-builder-extra-info-foot, .card-24-builder-45 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-45 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/45.png);
+    color: #fff
+}
+
+.card-24-46, .card-24-pack-46, .card-24-builder-46 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/46.png);
+    color: #fff
+}
+
+.card-24-46 .card-24-first-owner div, .card-24-pack-46 .card-24-pack-first-owner div, .card-24-builder-46 .card-24-builder-first-owner div {
+    color: #000
+}
+
+.card-24-46 .card-24-playstyle-container path, .card-24-small-46 .card-24-small-playstyle-container path, .card-24-pack-46 .card-24-pack-playstyle-container path, .card-24-builder-46 .card-24-builder-playstyle-container path {
+    fill: #000
+}
+
+.card-24-46 .card-24-extra-info-txt, .card-24-46 .card-24-extra-info-foot, .card-24-46 .card-24-foot-txt, .card-24-pack-46 .card-24-pack-extra-info-txt, .card-24-pack-46 .card-24-pack-extra-info-foot, .card-24-pack-46 .card-24-pack-foot-txt, .card-24-builder-46 .card-24-builder-extra-info-txt, .card-24-builder-46 .card-24-builder-extra-info-foot, .card-24-builder-46 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-46 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/46.png);
+    color: #fff
+}
+
+.card-24-49, .card-24-pack-49, .card-24-builder-49 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/49.png);
+    color: #fff
+}
+
+.card-24-49 .card-24-first-owner div, .card-24-pack-49 .card-24-pack-first-owner div, .card-24-builder-49 .card-24-builder-first-owner div {
+    color: #04115a
+}
+
+.card-24-49 .card-24-playstyle-container path, .card-24-small-49 .card-24-small-playstyle-container path, .card-24-pack-49 .card-24-pack-playstyle-container path, .card-24-builder-49 .card-24-builder-playstyle-container path {
+    fill: #04115a
+}
+
+.card-24-49 .card-24-extra-info-txt, .card-24-49 .card-24-extra-info-foot, .card-24-49 .card-24-foot-txt, .card-24-pack-49 .card-24-pack-extra-info-txt, .card-24-pack-49 .card-24-pack-extra-info-foot, .card-24-pack-49 .card-24-pack-foot-txt, .card-24-builder-49 .card-24-builder-extra-info-txt, .card-24-builder-49 .card-24-builder-extra-info-foot, .card-24-builder-49 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-49 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/49.png);
+    color: #fff
+}
+
+.card-24-50, .card-24-pack-50, .card-24-builder-50 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/50.png);
+    color: #fff
+}
+
+.card-24-50 .card-24-first-owner div, .card-24-pack-50 .card-24-pack-first-owner div, .card-24-builder-50 .card-24-builder-first-owner div {
+    color: #04115a
+}
+
+.card-24-50 .card-24-playstyle-container path, .card-24-small-50 .card-24-small-playstyle-container path, .card-24-pack-50 .card-24-pack-playstyle-container path, .card-24-builder-50 .card-24-builder-playstyle-container path {
+    fill: #04115a
+}
+
+.card-24-50 .card-24-extra-info-txt, .card-24-50 .card-24-extra-info-foot, .card-24-50 .card-24-foot-txt, .card-24-pack-50 .card-24-pack-extra-info-txt, .card-24-pack-50 .card-24-pack-extra-info-foot, .card-24-pack-50 .card-24-pack-foot-txt, .card-24-builder-50 .card-24-builder-extra-info-txt, .card-24-builder-50 .card-24-builder-extra-info-foot, .card-24-builder-50 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-50 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/50.png);
+    color: #fff
+}
+
+.card-24-52, .card-24-pack-52, .card-24-builder-52 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/52.png);
+    color: #f2f2f2
+}
+
+.card-24-52 .card-24-first-owner div, .card-24-pack-52 .card-24-pack-first-owner div, .card-24-builder-52 .card-24-builder-first-owner div {
+    color: #898b8e
+}
+
+.card-24-52 .card-24-playstyle-container path, .card-24-small-52 .card-24-small-playstyle-container path, .card-24-pack-52 .card-24-pack-playstyle-container path, .card-24-builder-52 .card-24-builder-playstyle-container path {
+    fill: #898b8e
+}
+
+.card-24-52 .card-24-extra-info-txt, .card-24-52 .card-24-extra-info-foot, .card-24-52 .card-24-foot-txt, .card-24-pack-52 .card-24-pack-extra-info-txt, .card-24-pack-52 .card-24-pack-extra-info-foot, .card-24-pack-52 .card-24-pack-foot-txt, .card-24-builder-52 .card-24-builder-extra-info-txt, .card-24-builder-52 .card-24-builder-extra-info-foot, .card-24-builder-52 .card-24-builder-foot-txt {
+    border-color: #f2f2f2
+}
+
+.card-24-small-52 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/52.png);
+    color: #f2f2f2
+}
+
+.card-24-53, .card-24-pack-53, .card-24-builder-53 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/53.png);
+    color: #f2f2f2
+}
+
+.card-24-53 .card-24-first-owner div, .card-24-pack-53 .card-24-pack-first-owner div, .card-24-builder-53 .card-24-builder-first-owner div {
+    color: #242424
+}
+
+.card-24-53 .card-24-playstyle-container path, .card-24-small-53 .card-24-small-playstyle-container path, .card-24-pack-53 .card-24-pack-playstyle-container path, .card-24-builder-53 .card-24-builder-playstyle-container path {
+    fill: #242424
+}
+
+.card-24-53 .card-24-extra-info-txt, .card-24-53 .card-24-extra-info-foot, .card-24-53 .card-24-foot-txt, .card-24-pack-53 .card-24-pack-extra-info-txt, .card-24-pack-53 .card-24-pack-extra-info-foot, .card-24-pack-53 .card-24-pack-foot-txt, .card-24-builder-53 .card-24-builder-extra-info-txt, .card-24-builder-53 .card-24-builder-extra-info-foot, .card-24-builder-53 .card-24-builder-foot-txt {
+    border-color: #f2f2f2
+}
+
+.card-24-small-53 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/53.png);
+    color: #f2f2f2
+}
+
+.card-24-54, .card-24-pack-54, .card-24-builder-54 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/54.png);
+    color: #f2f2f2
+}
+
+.card-24-54 .card-24-first-owner div, .card-24-pack-54 .card-24-pack-first-owner div, .card-24-builder-54 .card-24-builder-first-owner div {
+    color: #8b6b44
+}
+
+.card-24-54 .card-24-playstyle-container path, .card-24-small-54 .card-24-small-playstyle-container path, .card-24-pack-54 .card-24-pack-playstyle-container path, .card-24-builder-54 .card-24-builder-playstyle-container path {
+    fill: #8b6b44
+}
+
+.card-24-54 .card-24-extra-info-txt, .card-24-54 .card-24-extra-info-foot, .card-24-54 .card-24-foot-txt, .card-24-pack-54 .card-24-pack-extra-info-txt, .card-24-pack-54 .card-24-pack-extra-info-foot, .card-24-pack-54 .card-24-pack-foot-txt, .card-24-builder-54 .card-24-builder-extra-info-txt, .card-24-builder-54 .card-24-builder-extra-info-foot, .card-24-builder-54 .card-24-builder-foot-txt {
+    border-color: #f2f2f2
+}
+
+.card-24-small-54 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/54.png);
+    color: #f2f2f2
+}
+
+.card-24-59, .card-24-pack-59, .card-24-builder-59 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/59.png);
+    color: #f2f2f2
+}
+
+.card-24-59 .card-24-first-owner div, .card-24-pack-59 .card-24-pack-first-owner div, .card-24-builder-59 .card-24-builder-first-owner div {
+    color: #d7a51a
+}
+
+.card-24-59 .card-24-playstyle-container path, .card-24-small-59 .card-24-small-playstyle-container path, .card-24-pack-59 .card-24-pack-playstyle-container path, .card-24-builder-59 .card-24-builder-playstyle-container path {
+    fill: #d7a51a
+}
+
+.card-24-59 .card-24-extra-info-txt, .card-24-59 .card-24-extra-info-foot, .card-24-59 .card-24-foot-txt, .card-24-pack-59 .card-24-pack-extra-info-txt, .card-24-pack-59 .card-24-pack-extra-info-foot, .card-24-pack-59 .card-24-pack-foot-txt, .card-24-builder-59 .card-24-builder-extra-info-txt, .card-24-builder-59 .card-24-builder-extra-info-foot, .card-24-builder-59 .card-24-builder-foot-txt {
+    border-color: #f2f2f2
+}
+
+.card-24-small-59 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/59.png);
+    color: #f2f2f2
+}
+
+.card-24-67, .card-24-pack-67, .card-24-builder-67 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/67.png);
+    color: #f5f5f5
+}
+
+.card-24-67 .card-24-first-owner div, .card-24-pack-67 .card-24-pack-first-owner div, .card-24-builder-67 .card-24-builder-first-owner div {
+    color: #001f5b
+}
+
+.card-24-67 .card-24-playstyle-container path, .card-24-small-67 .card-24-small-playstyle-container path, .card-24-pack-67 .card-24-pack-playstyle-container path, .card-24-builder-67 .card-24-builder-playstyle-container path {
+    fill: #001f5b
+}
+
+.card-24-67 .card-24-extra-info-txt, .card-24-67 .card-24-extra-info-foot, .card-24-67 .card-24-foot-txt, .card-24-pack-67 .card-24-pack-extra-info-txt, .card-24-pack-67 .card-24-pack-extra-info-foot, .card-24-pack-67 .card-24-pack-foot-txt, .card-24-builder-67 .card-24-builder-extra-info-txt, .card-24-builder-67 .card-24-builder-extra-info-foot, .card-24-builder-67 .card-24-builder-foot-txt {
+    border-color: #f5f5f5
+}
+
+.card-24-small-67 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/67.png);
+    color: #f5f5f5
+}
+
+.card-24-79, .card-24-pack-79, .card-24-builder-79 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/79.png);
+    color: #f5f5f5
+}
+
+.card-24-79 .card-24-first-owner div, .card-24-pack-79 .card-24-pack-first-owner div, .card-24-builder-79 .card-24-builder-first-owner div {
+    color: #091c3e
+}
+
+.card-24-79 .card-24-playstyle-container path, .card-24-small-79 .card-24-small-playstyle-container path, .card-24-pack-79 .card-24-pack-playstyle-container path, .card-24-builder-79 .card-24-builder-playstyle-container path {
+    fill: #091c3e
+}
+
+.card-24-79 .card-24-extra-info-txt, .card-24-79 .card-24-extra-info-foot, .card-24-79 .card-24-foot-txt, .card-24-pack-79 .card-24-pack-extra-info-txt, .card-24-pack-79 .card-24-pack-extra-info-foot, .card-24-pack-79 .card-24-pack-foot-txt, .card-24-builder-79 .card-24-builder-extra-info-txt, .card-24-builder-79 .card-24-builder-extra-info-foot, .card-24-builder-79 .card-24-builder-foot-txt {
+    border-color: #f5f5f5
+}
+
+.card-24-small-79 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/79.png);
+    color: #f5f5f5
+}
+
+.card-24-86, .card-24-pack-86, .card-24-builder-86 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/86.png);
+    color: #fff
+}
+
+.card-24-86 .card-24-first-owner div, .card-24-pack-86 .card-24-pack-first-owner div, .card-24-builder-86 .card-24-builder-first-owner div {
+    color: #ff4b44
+}
+
+.card-24-86 .card-24-playstyle-container path, .card-24-small-86 .card-24-small-playstyle-container path, .card-24-pack-86 .card-24-pack-playstyle-container path, .card-24-builder-86 .card-24-builder-playstyle-container path {
+    fill: #ff4b44
+}
+
+.card-24-86 .card-24-extra-info-txt, .card-24-86 .card-24-extra-info-foot, .card-24-86 .card-24-foot-txt, .card-24-pack-86 .card-24-pack-extra-info-txt, .card-24-pack-86 .card-24-pack-extra-info-foot, .card-24-pack-86 .card-24-pack-foot-txt, .card-24-builder-86 .card-24-builder-extra-info-txt, .card-24-builder-86 .card-24-builder-extra-info-foot, .card-24-builder-86 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-86 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/86.png);
+    color: #fff
+}
+
+.card-24-103, .card-24-pack-103, .card-24-builder-103 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/103.png);
+    color: #fff
+}
+
+.card-24-103 .card-24-first-owner div, .card-24-pack-103 .card-24-pack-first-owner div, .card-24-builder-103 .card-24-builder-first-owner div {
+    color: #000
+}
+
+.card-24-103 .card-24-playstyle-container path, .card-24-small-103 .card-24-small-playstyle-container path, .card-24-pack-103 .card-24-pack-playstyle-container path, .card-24-builder-103 .card-24-builder-playstyle-container path {
+    fill: #000
+}
+
+.card-24-103 .card-24-extra-info-txt, .card-24-103 .card-24-extra-info-foot, .card-24-103 .card-24-foot-txt, .card-24-pack-103 .card-24-pack-extra-info-txt, .card-24-pack-103 .card-24-pack-extra-info-foot, .card-24-pack-103 .card-24-pack-foot-txt, .card-24-builder-103 .card-24-builder-extra-info-txt, .card-24-builder-103 .card-24-builder-extra-info-foot, .card-24-builder-103 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-103 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/103.png);
+    color: #fff
+}
+
+.card-24-104, .card-24-pack-104, .card-24-builder-104 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/104.png);
+    color: #fbebab
+}
+
+.card-24-104 .card-24-first-owner div, .card-24-pack-104 .card-24-pack-first-owner div, .card-24-builder-104 .card-24-builder-first-owner div {
+    color: #090f23
+}
+
+.card-24-104 .card-24-playstyle-container path, .card-24-small-104 .card-24-small-playstyle-container path, .card-24-pack-104 .card-24-pack-playstyle-container path, .card-24-builder-104 .card-24-builder-playstyle-container path {
+    fill: #090f23
+}
+
+.card-24-104 .card-24-extra-info-txt, .card-24-104 .card-24-extra-info-foot, .card-24-104 .card-24-foot-txt, .card-24-pack-104 .card-24-pack-extra-info-txt, .card-24-pack-104 .card-24-pack-extra-info-foot, .card-24-pack-104 .card-24-pack-foot-txt, .card-24-builder-104 .card-24-builder-extra-info-txt, .card-24-builder-104 .card-24-builder-extra-info-foot, .card-24-builder-104 .card-24-builder-foot-txt {
+    border-color: #fbebab
+}
+
+.card-24-small-104 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/104.png);
+    color: #fbebab
+}
+
+.card-24-105, .card-24-pack-105, .card-24-builder-105 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/105.png);
+    color: #fff
+}
+
+.card-24-105 .card-24-first-owner div, .card-24-pack-105 .card-24-pack-first-owner div, .card-24-builder-105 .card-24-builder-first-owner div {
+    color: #000
+}
+
+.card-24-105 .card-24-playstyle-container path, .card-24-small-105 .card-24-small-playstyle-container path, .card-24-pack-105 .card-24-pack-playstyle-container path, .card-24-builder-105 .card-24-builder-playstyle-container path {
+    fill: #000
+}
+
+.card-24-105 .card-24-extra-info-txt, .card-24-105 .card-24-extra-info-foot, .card-24-105 .card-24-foot-txt, .card-24-pack-105 .card-24-pack-extra-info-txt, .card-24-pack-105 .card-24-pack-extra-info-foot, .card-24-pack-105 .card-24-pack-foot-txt, .card-24-builder-105 .card-24-builder-extra-info-txt, .card-24-builder-105 .card-24-builder-extra-info-foot, .card-24-builder-105 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-105 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/105.png);
+    color: #fff
+}
+
+.card-24-114, .card-24-pack-114, .card-24-builder-114 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/114.png);
+    color: #00e8da
+}
+
+.card-24-114 .card-24-first-owner div, .card-24-pack-114 .card-24-pack-first-owner div, .card-24-builder-114 .card-24-builder-first-owner div {
+    color: #1c125a
+}
+
+.card-24-114 .card-24-playstyle-container path, .card-24-small-114 .card-24-small-playstyle-container path, .card-24-pack-114 .card-24-pack-playstyle-container path, .card-24-builder-114 .card-24-builder-playstyle-container path {
+    fill: #1c125a
+}
+
+.card-24-114 .card-24-extra-info-txt, .card-24-114 .card-24-extra-info-foot, .card-24-114 .card-24-foot-txt, .card-24-pack-114 .card-24-pack-extra-info-txt, .card-24-pack-114 .card-24-pack-extra-info-foot, .card-24-pack-114 .card-24-pack-foot-txt, .card-24-builder-114 .card-24-builder-extra-info-txt, .card-24-builder-114 .card-24-builder-extra-info-foot, .card-24-builder-114 .card-24-builder-foot-txt {
+    border-color: #00e8da
+}
+
+.card-24-small-114 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/114.png);
+    color: #00e8da
+}
+
+.card-24-115, .card-24-pack-115, .card-24-builder-115 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/115.png);
+    color: #fff
+}
+
+.card-24-115 .card-24-first-owner div, .card-24-pack-115 .card-24-pack-first-owner div, .card-24-builder-115 .card-24-builder-first-owner div {
+    color: #15104a
+}
+
+.card-24-115 .card-24-playstyle-container path, .card-24-small-115 .card-24-small-playstyle-container path, .card-24-pack-115 .card-24-pack-playstyle-container path, .card-24-builder-115 .card-24-builder-playstyle-container path {
+    fill: #15104a
+}
+
+.card-24-115 .card-24-extra-info-txt, .card-24-115 .card-24-extra-info-foot, .card-24-115 .card-24-foot-txt, .card-24-pack-115 .card-24-pack-extra-info-txt, .card-24-pack-115 .card-24-pack-extra-info-foot, .card-24-pack-115 .card-24-pack-foot-txt, .card-24-builder-115 .card-24-builder-extra-info-txt, .card-24-builder-115 .card-24-builder-extra-info-foot, .card-24-builder-115 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-115 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/115.png);
+    color: #fff
+}
+
+.card-24-125, .card-24-pack-125, .card-24-builder-125 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/125.png);
+    color: #fff
+}
+
+.card-24-125 .card-24-first-owner div, .card-24-pack-125 .card-24-pack-first-owner div, .card-24-builder-125 .card-24-builder-first-owner div {
+    color: #000
+}
+
+.card-24-125 .card-24-playstyle-container path, .card-24-small-125 .card-24-small-playstyle-container path, .card-24-pack-125 .card-24-pack-playstyle-container path, .card-24-builder-125 .card-24-builder-playstyle-container path {
+    fill: #000
+}
+
+.card-24-125 .card-24-extra-info-txt, .card-24-125 .card-24-extra-info-foot, .card-24-125 .card-24-foot-txt, .card-24-pack-125 .card-24-pack-extra-info-txt, .card-24-pack-125 .card-24-pack-extra-info-foot, .card-24-pack-125 .card-24-pack-foot-txt, .card-24-builder-125 .card-24-builder-extra-info-txt, .card-24-builder-125 .card-24-builder-extra-info-foot, .card-24-builder-125 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-125 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/125.png);
+    color: #fff
+}
+
+.card-24-126, .card-24-pack-126, .card-24-builder-126 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/126.png);
+    color: #fff
+}
+
+.card-24-126 .card-24-first-owner div, .card-24-pack-126 .card-24-pack-first-owner div, .card-24-builder-126 .card-24-builder-first-owner div {
+    color: #000
+}
+
+.card-24-126 .card-24-playstyle-container path, .card-24-small-126 .card-24-small-playstyle-container path, .card-24-pack-126 .card-24-pack-playstyle-container path, .card-24-builder-126 .card-24-builder-playstyle-container path {
+    fill: #000
+}
+
+.card-24-126 .card-24-extra-info-txt, .card-24-126 .card-24-extra-info-foot, .card-24-126 .card-24-foot-txt, .card-24-pack-126 .card-24-pack-extra-info-txt, .card-24-pack-126 .card-24-pack-extra-info-foot, .card-24-pack-126 .card-24-pack-foot-txt, .card-24-builder-126 .card-24-builder-extra-info-txt, .card-24-builder-126 .card-24-builder-extra-info-foot, .card-24-builder-126 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-126 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/126.png);
+    color: #fff
+}
+
+.card-24-151, .card-24-pack-151, .card-24-builder-151 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/151.png);
+    color: #f1e8ca
+}
+
+.card-24-151 .card-24-first-owner div, .card-24-pack-151 .card-24-pack-first-owner div, .card-24-builder-151 .card-24-builder-first-owner div {
+    color: #705e45
+}
+
+.card-24-151 .card-24-playstyle-container path, .card-24-small-151 .card-24-small-playstyle-container path, .card-24-pack-151 .card-24-pack-playstyle-container path, .card-24-builder-151 .card-24-builder-playstyle-container path {
+    fill: #705e45
+}
+
+.card-24-151 .card-24-extra-info-txt, .card-24-151 .card-24-extra-info-foot, .card-24-151 .card-24-foot-txt, .card-24-pack-151 .card-24-pack-extra-info-txt, .card-24-pack-151 .card-24-pack-extra-info-foot, .card-24-pack-151 .card-24-pack-foot-txt, .card-24-builder-151 .card-24-builder-extra-info-txt, .card-24-builder-151 .card-24-builder-extra-info-foot, .card-24-builder-151 .card-24-builder-foot-txt {
+    border-color: #f1e8ca
+}
+
+.card-24-small-151 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/151.png);
+    color: #f1e8ca
+}
+
+.card-24-154, .card-24-pack-154, .card-24-builder-154 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/154.png?v);
+    color: #fffcfe
+}
+
+.card-24-154 .card-24-first-owner div, .card-24-pack-154 .card-24-pack-first-owner div, .card-24-builder-154 .card-24-builder-first-owner div {
+    color: #ff239f
+}
+
+.card-24-154 .card-24-playstyle-container path, .card-24-small-154 .card-24-small-playstyle-container path, .card-24-pack-154 .card-24-pack-playstyle-container path, .card-24-builder-154 .card-24-builder-playstyle-container path {
+    fill: #ff239f
+}
+
+.card-24-154 .card-24-extra-info-txt, .card-24-154 .card-24-extra-info-foot, .card-24-154 .card-24-foot-txt, .card-24-pack-154 .card-24-pack-extra-info-txt, .card-24-pack-154 .card-24-pack-extra-info-foot, .card-24-pack-154 .card-24-pack-foot-txt, .card-24-builder-154 .card-24-builder-extra-info-txt, .card-24-builder-154 .card-24-builder-extra-info-foot, .card-24-builder-154 .card-24-builder-foot-txt {
+    border-color: #fffcfe
+}
+
+.card-24-small-154 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/154.png?v);
+    color: #fffcfe
+}
+
+.card-24-168, .card-24-pack-168, .card-24-builder-168 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/168.png);
+    color: #594d2c
+}
+
+.card-24-168 .card-24-first-owner div, .card-24-pack-168 .card-24-pack-first-owner div, .card-24-builder-168 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-168 .card-24-playstyle-container path, .card-24-small-168 .card-24-small-playstyle-container path, .card-24-pack-168 .card-24-pack-playstyle-container path, .card-24-builder-168 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-168 .card-24-extra-info-txt, .card-24-168 .card-24-extra-info-foot, .card-24-168 .card-24-foot-txt, .card-24-pack-168 .card-24-pack-extra-info-txt, .card-24-pack-168 .card-24-pack-extra-info-foot, .card-24-pack-168 .card-24-pack-foot-txt, .card-24-builder-168 .card-24-builder-extra-info-txt, .card-24-builder-168 .card-24-builder-extra-info-foot, .card-24-builder-168 .card-24-builder-foot-txt {
+    border-color: #594d2c
+}
+
+.card-24-small-168 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/168.png);
+    color: #594d2c
+}
+
+.card-24-31, .card-24-pack-31, .card-24-builder-31 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/31.png);
+    color: #fff
+}
+
+.card-24-31 .card-24-first-owner div, .card-24-pack-31 .card-24-pack-first-owner div, .card-24-builder-31 .card-24-builder-first-owner div {
+    color: #012553
+}
+
+.card-24-31 .card-24-playstyle-container path, .card-24-small-31 .card-24-small-playstyle-container path, .card-24-pack-31 .card-24-pack-playstyle-container path, .card-24-builder-31 .card-24-builder-playstyle-container path {
+    fill: #012553
+}
+
+.card-24-31 .card-24-extra-info-txt, .card-24-31 .card-24-extra-info-foot, .card-24-31 .card-24-foot-txt, .card-24-pack-31 .card-24-pack-extra-info-txt, .card-24-pack-31 .card-24-pack-extra-info-foot, .card-24-pack-31 .card-24-pack-foot-txt, .card-24-builder-31 .card-24-builder-extra-info-txt, .card-24-builder-31 .card-24-builder-extra-info-foot, .card-24-builder-31 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-31 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/31.png);
+    color: #fff
+}
+
+.card-24-22, .card-24-pack-22, .card-24-builder-22 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/22.png);
+    color: #fff
+}
+
+.card-24-22 .card-24-first-owner div, .card-24-pack-22 .card-24-pack-first-owner div, .card-24-builder-22 .card-24-builder-first-owner div {
+    color: #3c2975
+}
+
+.card-24-22 .card-24-playstyle-container path, .card-24-small-22 .card-24-small-playstyle-container path, .card-24-pack-22 .card-24-pack-playstyle-container path, .card-24-builder-22 .card-24-builder-playstyle-container path {
+    fill: #3c2975
+}
+
+.card-24-22 .card-24-extra-info-txt, .card-24-22 .card-24-extra-info-foot, .card-24-22 .card-24-foot-txt, .card-24-pack-22 .card-24-pack-extra-info-txt, .card-24-pack-22 .card-24-pack-extra-info-foot, .card-24-pack-22 .card-24-pack-foot-txt, .card-24-builder-22 .card-24-builder-extra-info-txt, .card-24-builder-22 .card-24-builder-extra-info-foot, .card-24-builder-22 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-22 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/22.png);
+    color: #fff
+}
+
+.card-24-26, .card-24-pack-26, .card-24-builder-26 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/26.png);
+    color: #f1e8ca
+}
+
+.card-24-26 .card-24-first-owner div, .card-24-pack-26 .card-24-pack-first-owner div, .card-24-builder-26 .card-24-builder-first-owner div {
+    color: #705e45
+}
+
+.card-24-26 .card-24-playstyle-container path, .card-24-small-26 .card-24-small-playstyle-container path, .card-24-pack-26 .card-24-pack-playstyle-container path, .card-24-builder-26 .card-24-builder-playstyle-container path {
+    fill: #705e45
+}
+
+.card-24-26 .card-24-extra-info-txt, .card-24-26 .card-24-extra-info-foot, .card-24-26 .card-24-foot-txt, .card-24-pack-26 .card-24-pack-extra-info-txt, .card-24-pack-26 .card-24-pack-extra-info-foot, .card-24-pack-26 .card-24-pack-foot-txt, .card-24-builder-26 .card-24-builder-extra-info-txt, .card-24-builder-26 .card-24-builder-extra-info-foot, .card-24-builder-26 .card-24-builder-foot-txt {
+    border-color: #f1e8ca
+}
+
+.card-24-small-26 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/26.png);
+    color: #f1e8ca
+}
+
+.card-24-27, .card-24-pack-27, .card-24-builder-27 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/27.png);
+    color: #f1e8ca
+}
+
+.card-24-27 .card-24-first-owner div, .card-24-pack-27 .card-24-pack-first-owner div, .card-24-builder-27 .card-24-builder-first-owner div {
+    color: #705e45
+}
+
+.card-24-27 .card-24-playstyle-container path, .card-24-small-27 .card-24-small-playstyle-container path, .card-24-pack-27 .card-24-pack-playstyle-container path, .card-24-builder-27 .card-24-builder-playstyle-container path {
+    fill: #705e45
+}
+
+.card-24-27 .card-24-extra-info-txt, .card-24-27 .card-24-extra-info-foot, .card-24-27 .card-24-foot-txt, .card-24-pack-27 .card-24-pack-extra-info-txt, .card-24-pack-27 .card-24-pack-extra-info-foot, .card-24-pack-27 .card-24-pack-foot-txt, .card-24-builder-27 .card-24-builder-extra-info-txt, .card-24-builder-27 .card-24-builder-extra-info-foot, .card-24-builder-27 .card-24-builder-foot-txt {
+    border-color: #f1e8ca
+}
+
+.card-24-small-27 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/27.png);
+    color: #f1e8ca
+}
+
+.card-24-57, .card-24-pack-57, .card-24-builder-57 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/57.png);
+    color: #fff
+}
+
+.card-24-57 .card-24-first-owner div, .card-24-pack-57 .card-24-pack-first-owner div, .card-24-builder-57 .card-24-builder-first-owner div {
+    color: #333433
+}
+
+.card-24-57 .card-24-playstyle-container path, .card-24-small-57 .card-24-small-playstyle-container path, .card-24-pack-57 .card-24-pack-playstyle-container path, .card-24-builder-57 .card-24-builder-playstyle-container path {
+    fill: #333433
+}
+
+.card-24-57 .card-24-extra-info-txt, .card-24-57 .card-24-extra-info-foot, .card-24-57 .card-24-foot-txt, .card-24-pack-57 .card-24-pack-extra-info-txt, .card-24-pack-57 .card-24-pack-extra-info-foot, .card-24-pack-57 .card-24-pack-foot-txt, .card-24-builder-57 .card-24-builder-extra-info-txt, .card-24-builder-57 .card-24-builder-extra-info-foot, .card-24-builder-57 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-57 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/57.png);
+    color: #fff
+}
+
+.card-24-58, .card-24-pack-58, .card-24-builder-58 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/58.png);
+    color: #fff
+}
+
+.card-24-58 .card-24-first-owner div, .card-24-pack-58 .card-24-pack-first-owner div, .card-24-builder-58 .card-24-builder-first-owner div {
+    color: #333433
+}
+
+.card-24-58 .card-24-playstyle-container path, .card-24-small-58 .card-24-small-playstyle-container path, .card-24-pack-58 .card-24-pack-playstyle-container path, .card-24-builder-58 .card-24-builder-playstyle-container path {
+    fill: #333433
+}
+
+.card-24-58 .card-24-extra-info-txt, .card-24-58 .card-24-extra-info-foot, .card-24-58 .card-24-foot-txt, .card-24-pack-58 .card-24-pack-extra-info-txt, .card-24-pack-58 .card-24-pack-extra-info-foot, .card-24-pack-58 .card-24-pack-foot-txt, .card-24-builder-58 .card-24-builder-extra-info-txt, .card-24-builder-58 .card-24-builder-extra-info-foot, .card-24-builder-58 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-58 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/58.png);
+    color: #fff
+}
+
+.card-24-7, .card-24-pack-7, .card-24-builder-7 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/7.png);
+    color: #fff
+}
+
+.card-24-7 .card-24-first-owner div, .card-24-pack-7 .card-24-pack-first-owner div, .card-24-builder-7 .card-24-builder-first-owner div {
+    color: #236b25
+}
+
+.card-24-7 .card-24-playstyle-container path, .card-24-small-7 .card-24-small-playstyle-container path, .card-24-pack-7 .card-24-pack-playstyle-container path, .card-24-builder-7 .card-24-builder-playstyle-container path {
+    fill: #236b25
+}
+
+.card-24-7 .card-24-extra-info-txt, .card-24-7 .card-24-extra-info-foot, .card-24-7 .card-24-foot-txt, .card-24-pack-7 .card-24-pack-extra-info-txt, .card-24-pack-7 .card-24-pack-extra-info-foot, .card-24-pack-7 .card-24-pack-foot-txt, .card-24-builder-7 .card-24-builder-extra-info-txt, .card-24-builder-7 .card-24-builder-extra-info-foot, .card-24-builder-7 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-7 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/7.png);
+    color: #fff
+}
+
+.card-24-44, .card-24-pack-44, .card-24-builder-44 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/44.png);
+    color: #f5f5f5
+}
+
+.card-24-44 .card-24-first-owner div, .card-24-pack-44 .card-24-pack-first-owner div, .card-24-builder-44 .card-24-builder-first-owner div {
+    color: #8f8f8f
+}
+
+.card-24-44 .card-24-playstyle-container path, .card-24-small-44 .card-24-small-playstyle-container path, .card-24-pack-44 .card-24-pack-playstyle-container path, .card-24-builder-44 .card-24-builder-playstyle-container path {
+    fill: #8f8f8f
+}
+
+.card-24-44 .card-24-extra-info-txt, .card-24-44 .card-24-extra-info-foot, .card-24-44 .card-24-foot-txt, .card-24-pack-44 .card-24-pack-extra-info-txt, .card-24-pack-44 .card-24-pack-extra-info-foot, .card-24-pack-44 .card-24-pack-foot-txt, .card-24-builder-44 .card-24-builder-extra-info-txt, .card-24-builder-44 .card-24-builder-extra-info-foot, .card-24-builder-44 .card-24-builder-foot-txt {
+    border-color: #f5f5f5
+}
+
+.card-24-small-44 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/44.png);
+    color: #f5f5f5
+}
+
+.card-24-28, .card-24-pack-28, .card-24-builder-28 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/28.png);
+    color: #f6eaef
+}
+
+.card-24-28 .card-24-first-owner div, .card-24-pack-28 .card-24-pack-first-owner div, .card-24-builder-28 .card-24-builder-first-owner div {
+    color: #6a409c
+}
+
+.card-24-28 .card-24-playstyle-container path, .card-24-small-28 .card-24-small-playstyle-container path, .card-24-pack-28 .card-24-pack-playstyle-container path, .card-24-builder-28 .card-24-builder-playstyle-container path {
+    fill: #6a409c
+}
+
+.card-24-28 .card-24-extra-info-txt, .card-24-28 .card-24-extra-info-foot, .card-24-28 .card-24-foot-txt, .card-24-pack-28 .card-24-pack-extra-info-txt, .card-24-pack-28 .card-24-pack-extra-info-foot, .card-24-pack-28 .card-24-pack-foot-txt, .card-24-builder-28 .card-24-builder-extra-info-txt, .card-24-builder-28 .card-24-builder-extra-info-foot, .card-24-builder-28 .card-24-builder-foot-txt {
+    border-color: #f6eaef
+}
+
+.card-24-small-28 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/28.png);
+    color: #f6eaef
+}
+
+.card-24-82, .card-24-pack-82, .card-24-builder-82 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/82.png);
+    color: #f5f0d8
+}
+
+.card-24-82 .card-24-first-owner div, .card-24-pack-82 .card-24-pack-first-owner div, .card-24-builder-82 .card-24-builder-first-owner div {
+    color: #6b3b3b
+}
+
+.card-24-82 .card-24-playstyle-container path, .card-24-small-82 .card-24-small-playstyle-container path, .card-24-pack-82 .card-24-pack-playstyle-container path, .card-24-builder-82 .card-24-builder-playstyle-container path {
+    fill: #6b3b3b
+}
+
+.card-24-82 .card-24-extra-info-txt, .card-24-82 .card-24-extra-info-foot, .card-24-82 .card-24-foot-txt, .card-24-pack-82 .card-24-pack-extra-info-txt, .card-24-pack-82 .card-24-pack-extra-info-foot, .card-24-pack-82 .card-24-pack-foot-txt, .card-24-builder-82 .card-24-builder-extra-info-txt, .card-24-builder-82 .card-24-builder-extra-info-foot, .card-24-builder-82 .card-24-builder-foot-txt {
+    border-color: #f5f0d8
+}
+
+.card-24-small-82 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/82.png);
+    color: #f5f0d8
+}
+
+.card-24-34, .card-24-pack-34, .card-24-builder-34 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/34.png);
+    color: #fff
+}
+
+.card-24-34 .card-24-first-owner div, .card-24-pack-34 .card-24-pack-first-owner div, .card-24-builder-34 .card-24-builder-first-owner div {
+    color: #8500dd
+}
+
+.card-24-34 .card-24-playstyle-container path, .card-24-small-34 .card-24-small-playstyle-container path, .card-24-pack-34 .card-24-pack-playstyle-container path, .card-24-builder-34 .card-24-builder-playstyle-container path {
+    fill: #8500dd
+}
+
+.card-24-34 .card-24-extra-info-txt, .card-24-34 .card-24-extra-info-foot, .card-24-34 .card-24-foot-txt, .card-24-pack-34 .card-24-pack-extra-info-txt, .card-24-pack-34 .card-24-pack-extra-info-foot, .card-24-pack-34 .card-24-pack-foot-txt, .card-24-builder-34 .card-24-builder-extra-info-txt, .card-24-builder-34 .card-24-builder-extra-info-foot, .card-24-builder-34 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-34 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/34.png);
+    color: #fff
+}
+
+.card-24-80, .card-24-pack-80, .card-24-builder-80 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/80.png);
+    color: #fff
+}
+
+.card-24-80 .card-24-first-owner div, .card-24-pack-80 .card-24-pack-first-owner div, .card-24-builder-80 .card-24-builder-first-owner div {
+    color: #8500dd
+}
+
+.card-24-80 .card-24-playstyle-container path, .card-24-small-80 .card-24-small-playstyle-container path, .card-24-pack-80 .card-24-pack-playstyle-container path, .card-24-builder-80 .card-24-builder-playstyle-container path {
+    fill: #8500dd
+}
+
+.card-24-80 .card-24-extra-info-txt, .card-24-80 .card-24-extra-info-foot, .card-24-80 .card-24-foot-txt, .card-24-pack-80 .card-24-pack-extra-info-txt, .card-24-pack-80 .card-24-pack-extra-info-foot, .card-24-pack-80 .card-24-pack-foot-txt, .card-24-builder-80 .card-24-builder-extra-info-txt, .card-24-builder-80 .card-24-builder-extra-info-foot, .card-24-builder-80 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-80 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/80.png);
+    color: #fff
+}
+
+.card-24-17, .card-24-pack-17, .card-24-builder-17 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/17.png);
+    color: #f6db7b
+}
+
+.card-24-17 .card-24-first-owner div, .card-24-pack-17 .card-24-pack-first-owner div, .card-24-builder-17 .card-24-builder-first-owner div {
+    color: #4e0e0e
+}
+
+.card-24-17 .card-24-playstyle-container path, .card-24-small-17 .card-24-small-playstyle-container path, .card-24-pack-17 .card-24-pack-playstyle-container path, .card-24-builder-17 .card-24-builder-playstyle-container path {
+    fill: #4e0e0e
+}
+
+.card-24-17 .card-24-extra-info-txt, .card-24-17 .card-24-extra-info-foot, .card-24-17 .card-24-foot-txt, .card-24-pack-17 .card-24-pack-extra-info-txt, .card-24-pack-17 .card-24-pack-extra-info-foot, .card-24-pack-17 .card-24-pack-foot-txt, .card-24-builder-17 .card-24-builder-extra-info-txt, .card-24-builder-17 .card-24-builder-extra-info-foot, .card-24-builder-17 .card-24-builder-foot-txt {
+    border-color: #f6db7b
+}
+
+.card-24-small-17 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/17.png);
+    color: #f6db7b
+}
+
+.card-24-19, .card-24-pack-19, .card-24-builder-19 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/19.png);
+    color: #f6db7b
+}
+
+.card-24-19 .card-24-first-owner div, .card-24-pack-19 .card-24-pack-first-owner div, .card-24-builder-19 .card-24-builder-first-owner div {
+    color: #4e0e0e
+}
+
+.card-24-19 .card-24-playstyle-container path, .card-24-small-19 .card-24-small-playstyle-container path, .card-24-pack-19 .card-24-pack-playstyle-container path, .card-24-builder-19 .card-24-builder-playstyle-container path {
+    fill: #4e0e0e
+}
+
+.card-24-19 .card-24-extra-info-txt, .card-24-19 .card-24-extra-info-foot, .card-24-19 .card-24-foot-txt, .card-24-pack-19 .card-24-pack-extra-info-txt, .card-24-pack-19 .card-24-pack-extra-info-foot, .card-24-pack-19 .card-24-pack-foot-txt, .card-24-builder-19 .card-24-builder-extra-info-txt, .card-24-builder-19 .card-24-builder-extra-info-foot, .card-24-builder-19 .card-24-builder-foot-txt {
+    border-color: #f6db7b
+}
+
+.card-24-small-19 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/19.png);
+    color: #f6db7b
+}
+
+.card-24-33, .card-24-pack-33, .card-24-builder-33 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/33.png);
+    color: #fdf3be
+}
+
+.card-24-33 .card-24-first-owner div, .card-24-pack-33 .card-24-pack-first-owner div, .card-24-builder-33 .card-24-builder-first-owner div {
+    color: #0a144a
+}
+
+.card-24-33 .card-24-playstyle-container path, .card-24-small-33 .card-24-small-playstyle-container path, .card-24-pack-33 .card-24-pack-playstyle-container path, .card-24-builder-33 .card-24-builder-playstyle-container path {
+    fill: #0a144a
+}
+
+.card-24-33 .card-24-extra-info-txt, .card-24-33 .card-24-extra-info-foot, .card-24-33 .card-24-foot-txt, .card-24-pack-33 .card-24-pack-extra-info-txt, .card-24-pack-33 .card-24-pack-extra-info-foot, .card-24-pack-33 .card-24-pack-foot-txt, .card-24-builder-33 .card-24-builder-extra-info-txt, .card-24-builder-33 .card-24-builder-extra-info-foot, .card-24-builder-33 .card-24-builder-foot-txt {
+    border-color: #fdf3be
+}
+
+.card-24-small-33 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/33.png);
+    color: #fdf3be
+}
+
+.card-24-157, .card-24-pack-157, .card-24-builder-157 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/157.png);
+    color: #362d14
+}
+
+.card-24-157 .card-24-first-owner div, .card-24-pack-157 .card-24-pack-first-owner div, .card-24-builder-157 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-157 .card-24-playstyle-container path, .card-24-small-157 .card-24-small-playstyle-container path, .card-24-pack-157 .card-24-pack-playstyle-container path, .card-24-builder-157 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-157 .card-24-extra-info-txt, .card-24-157 .card-24-extra-info-foot, .card-24-157 .card-24-foot-txt, .card-24-pack-157 .card-24-pack-extra-info-txt, .card-24-pack-157 .card-24-pack-extra-info-foot, .card-24-pack-157 .card-24-pack-foot-txt, .card-24-builder-157 .card-24-builder-extra-info-txt, .card-24-builder-157 .card-24-builder-extra-info-foot, .card-24-builder-157 .card-24-builder-foot-txt {
+    border-color: #362d14
+}
+
+.card-24-small-157 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/157.png);
+    color: #362d14
+}
+
+.card-24-23, .card-24-pack-23, .card-24-builder-23 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/23.png);
+    color: #1a210c
+}
+
+.card-24-23 .card-24-first-owner div, .card-24-pack-23 .card-24-pack-first-owner div, .card-24-builder-23 .card-24-builder-first-owner div {
+    color: #edff1a
+}
+
+.card-24-23 .card-24-playstyle-container path, .card-24-small-23 .card-24-small-playstyle-container path, .card-24-pack-23 .card-24-pack-playstyle-container path, .card-24-builder-23 .card-24-builder-playstyle-container path {
+    fill: #edff1a
+}
+
+.card-24-23 .card-24-extra-info-txt, .card-24-23 .card-24-extra-info-foot, .card-24-23 .card-24-foot-txt, .card-24-pack-23 .card-24-pack-extra-info-txt, .card-24-pack-23 .card-24-pack-extra-info-foot, .card-24-pack-23 .card-24-pack-foot-txt, .card-24-builder-23 .card-24-builder-extra-info-txt, .card-24-builder-23 .card-24-builder-extra-info-foot, .card-24-builder-23 .card-24-builder-foot-txt {
+    border-color: #1a210c
+}
+
+.card-24-small-23 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/23.png);
+    color: #1a210c
+}
+
+.card-24-37, .card-24-pack-37, .card-24-builder-37 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/37.png);
+    color: #1a210c
+}
+
+.card-24-37 .card-24-first-owner div, .card-24-pack-37 .card-24-pack-first-owner div, .card-24-builder-37 .card-24-builder-first-owner div {
+    color: #edff1a
+}
+
+.card-24-37 .card-24-playstyle-container path, .card-24-small-37 .card-24-small-playstyle-container path, .card-24-pack-37 .card-24-pack-playstyle-container path, .card-24-builder-37 .card-24-builder-playstyle-container path {
+    fill: #edff1a
+}
+
+.card-24-37 .card-24-extra-info-txt, .card-24-37 .card-24-extra-info-foot, .card-24-37 .card-24-foot-txt, .card-24-pack-37 .card-24-pack-extra-info-txt, .card-24-pack-37 .card-24-pack-extra-info-foot, .card-24-pack-37 .card-24-pack-foot-txt, .card-24-builder-37 .card-24-builder-extra-info-txt, .card-24-builder-37 .card-24-builder-extra-info-foot, .card-24-builder-37 .card-24-builder-foot-txt {
+    border-color: #1a210c
+}
+
+.card-24-small-37 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/37.png);
+    color: #1a210c
+}
+
+.card-24-14, .card-24-pack-14, .card-24-builder-14 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/14.png);
+    color: #fff
+}
+
+.card-24-14 .card-24-first-owner div, .card-24-pack-14 .card-24-pack-first-owner div, .card-24-builder-14 .card-24-builder-first-owner div {
+    color: #1c6e82
+}
+
+.card-24-14 .card-24-playstyle-container path, .card-24-small-14 .card-24-small-playstyle-container path, .card-24-pack-14 .card-24-pack-playstyle-container path, .card-24-builder-14 .card-24-builder-playstyle-container path {
+    fill: #1c6e82
+}
+
+.card-24-14 .card-24-extra-info-txt, .card-24-14 .card-24-extra-info-foot, .card-24-14 .card-24-foot-txt, .card-24-pack-14 .card-24-pack-extra-info-txt, .card-24-pack-14 .card-24-pack-extra-info-foot, .card-24-pack-14 .card-24-pack-foot-txt, .card-24-builder-14 .card-24-builder-extra-info-txt, .card-24-builder-14 .card-24-builder-extra-info-foot, .card-24-builder-14 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-14 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/14.png);
+    color: #fff
+}
+
+.card-24-68, .card-24-pack-68, .card-24-builder-68 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/68.png);
+    color: #fff
+}
+
+.card-24-68 .card-24-first-owner div, .card-24-pack-68 .card-24-pack-first-owner div, .card-24-builder-68 .card-24-builder-first-owner div {
+    color: #04115a
+}
+
+.card-24-68 .card-24-playstyle-container path, .card-24-small-68 .card-24-small-playstyle-container path, .card-24-pack-68 .card-24-pack-playstyle-container path, .card-24-builder-68 .card-24-builder-playstyle-container path {
+    fill: #04115a
+}
+
+.card-24-68 .card-24-extra-info-txt, .card-24-68 .card-24-extra-info-foot, .card-24-68 .card-24-foot-txt, .card-24-pack-68 .card-24-pack-extra-info-txt, .card-24-pack-68 .card-24-pack-extra-info-foot, .card-24-pack-68 .card-24-pack-foot-txt, .card-24-builder-68 .card-24-builder-extra-info-txt, .card-24-builder-68 .card-24-builder-extra-info-foot, .card-24-builder-68 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-68 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/68.png);
+    color: #fff
+}
+
+.card-24-69, .card-24-pack-69, .card-24-builder-69 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/69.png);
+    color: #fff
+}
+
+.card-24-69 .card-24-first-owner div, .card-24-pack-69 .card-24-pack-first-owner div, .card-24-builder-69 .card-24-builder-first-owner div {
+    color: #000
+}
+
+.card-24-69 .card-24-playstyle-container path, .card-24-small-69 .card-24-small-playstyle-container path, .card-24-pack-69 .card-24-pack-playstyle-container path, .card-24-builder-69 .card-24-builder-playstyle-container path {
+    fill: #000
+}
+
+.card-24-69 .card-24-extra-info-txt, .card-24-69 .card-24-extra-info-foot, .card-24-69 .card-24-foot-txt, .card-24-pack-69 .card-24-pack-extra-info-txt, .card-24-pack-69 .card-24-pack-extra-info-foot, .card-24-pack-69 .card-24-pack-foot-txt, .card-24-builder-69 .card-24-builder-extra-info-txt, .card-24-builder-69 .card-24-builder-extra-info-foot, .card-24-builder-69 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-69 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/69.png);
+    color: #fff
+}
+
+.card-24-70, .card-24-pack-70, .card-24-builder-70 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/70.png);
+    color: #fff
+}
+
+.card-24-70 .card-24-first-owner div, .card-24-pack-70 .card-24-pack-first-owner div, .card-24-builder-70 .card-24-builder-first-owner div {
+    color: #000
+}
+
+.card-24-70 .card-24-playstyle-container path, .card-24-small-70 .card-24-small-playstyle-container path, .card-24-pack-70 .card-24-pack-playstyle-container path, .card-24-builder-70 .card-24-builder-playstyle-container path {
+    fill: #000
+}
+
+.card-24-70 .card-24-extra-info-txt, .card-24-70 .card-24-extra-info-foot, .card-24-70 .card-24-foot-txt, .card-24-pack-70 .card-24-pack-extra-info-txt, .card-24-pack-70 .card-24-pack-extra-info-foot, .card-24-pack-70 .card-24-pack-foot-txt, .card-24-builder-70 .card-24-builder-extra-info-txt, .card-24-builder-70 .card-24-builder-extra-info-foot, .card-24-builder-70 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-70 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/70.png);
+    color: #fff
+}
+
+.card-24-81, .card-24-pack-81, .card-24-builder-81 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/81.png);
+    color: #594d2c
+}
+
+.card-24-81 .card-24-first-owner div, .card-24-pack-81 .card-24-pack-first-owner div, .card-24-builder-81 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-81 .card-24-playstyle-container path, .card-24-small-81 .card-24-small-playstyle-container path, .card-24-pack-81 .card-24-pack-playstyle-container path, .card-24-builder-81 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-81 .card-24-extra-info-txt, .card-24-81 .card-24-extra-info-foot, .card-24-81 .card-24-foot-txt, .card-24-pack-81 .card-24-pack-extra-info-txt, .card-24-pack-81 .card-24-pack-extra-info-foot, .card-24-pack-81 .card-24-pack-foot-txt, .card-24-builder-81 .card-24-builder-extra-info-txt, .card-24-builder-81 .card-24-builder-extra-info-foot, .card-24-builder-81 .card-24-builder-foot-txt {
+    border-color: #594d2c
+}
+
+.card-24-small-81 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/81.png);
+    color: #594d2c
+}
+
+.card-24-84, .card-24-pack-84, .card-24-builder-84 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/84.png);
+    color: #f9f4e9
+}
+
+.card-24-84 .card-24-first-owner div, .card-24-pack-84 .card-24-pack-first-owner div, .card-24-builder-84 .card-24-builder-first-owner div {
+    color: #6b3b3b
+}
+
+.card-24-84 .card-24-playstyle-container path, .card-24-small-84 .card-24-small-playstyle-container path, .card-24-pack-84 .card-24-pack-playstyle-container path, .card-24-builder-84 .card-24-builder-playstyle-container path {
+    fill: #6b3b3b
+}
+
+.card-24-84 .card-24-extra-info-txt, .card-24-84 .card-24-extra-info-foot, .card-24-84 .card-24-foot-txt, .card-24-pack-84 .card-24-pack-extra-info-txt, .card-24-pack-84 .card-24-pack-extra-info-foot, .card-24-pack-84 .card-24-pack-foot-txt, .card-24-builder-84 .card-24-builder-extra-info-txt, .card-24-builder-84 .card-24-builder-extra-info-foot, .card-24-builder-84 .card-24-builder-foot-txt {
+    border-color: #f9f4e9
+}
+
+.card-24-small-84 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/84.png);
+    color: #f9f4e9
+}
+
+.card-24-85, .card-24-pack-85, .card-24-builder-85 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/85.png);
+    color: #362d14
+}
+
+.card-24-85 .card-24-first-owner div, .card-24-pack-85 .card-24-pack-first-owner div, .card-24-builder-85 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-85 .card-24-playstyle-container path, .card-24-small-85 .card-24-small-playstyle-container path, .card-24-pack-85 .card-24-pack-playstyle-container path, .card-24-builder-85 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-85 .card-24-extra-info-txt, .card-24-85 .card-24-extra-info-foot, .card-24-85 .card-24-foot-txt, .card-24-pack-85 .card-24-pack-extra-info-txt, .card-24-pack-85 .card-24-pack-extra-info-foot, .card-24-pack-85 .card-24-pack-foot-txt, .card-24-builder-85 .card-24-builder-extra-info-txt, .card-24-builder-85 .card-24-builder-extra-info-foot, .card-24-builder-85 .card-24-builder-foot-txt {
+    border-color: #362d14
+}
+
+.card-24-small-85 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/85.png);
+    color: #362d14
+}
+
+.card-24-95, .card-24-pack-95, .card-24-builder-95 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/95.png);
+    color: #f9f4e9
+}
+
+.card-24-95 .card-24-first-owner div, .card-24-pack-95 .card-24-pack-first-owner div, .card-24-builder-95 .card-24-builder-first-owner div {
+    color: #6b3b3b
+}
+
+.card-24-95 .card-24-playstyle-container path, .card-24-small-95 .card-24-small-playstyle-container path, .card-24-pack-95 .card-24-pack-playstyle-container path, .card-24-builder-95 .card-24-builder-playstyle-container path {
+    fill: #6b3b3b
+}
+
+.card-24-95 .card-24-extra-info-txt, .card-24-95 .card-24-extra-info-foot, .card-24-95 .card-24-foot-txt, .card-24-pack-95 .card-24-pack-extra-info-txt, .card-24-pack-95 .card-24-pack-extra-info-foot, .card-24-pack-95 .card-24-pack-foot-txt, .card-24-builder-95 .card-24-builder-extra-info-txt, .card-24-builder-95 .card-24-builder-extra-info-foot, .card-24-builder-95 .card-24-builder-foot-txt {
+    border-color: #f9f4e9
+}
+
+.card-24-small-95 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/95.png);
+    color: #f9f4e9
+}
+
+.card-24-123, .card-24-pack-123, .card-24-builder-123 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/123.png);
+    color: #eef4f7
+}
+
+.card-24-123 .card-24-first-owner div, .card-24-pack-123 .card-24-pack-first-owner div, .card-24-builder-123 .card-24-builder-first-owner div {
+    color: #1f2369
+}
+
+.card-24-123 .card-24-playstyle-container path, .card-24-small-123 .card-24-small-playstyle-container path, .card-24-pack-123 .card-24-pack-playstyle-container path, .card-24-builder-123 .card-24-builder-playstyle-container path {
+    fill: #1f2369
+}
+
+.card-24-123 .card-24-extra-info-txt, .card-24-123 .card-24-extra-info-foot, .card-24-123 .card-24-foot-txt, .card-24-pack-123 .card-24-pack-extra-info-txt, .card-24-pack-123 .card-24-pack-extra-info-foot, .card-24-pack-123 .card-24-pack-foot-txt, .card-24-builder-123 .card-24-builder-extra-info-txt, .card-24-builder-123 .card-24-builder-extra-info-foot, .card-24-builder-123 .card-24-builder-foot-txt {
+    border-color: #eef4f7
+}
+
+.card-24-small-123 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/123.png);
+    color: #eef4f7
+}
+
+.card-24-35, .card-24-pack-35, .card-24-builder-35 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/35.png);
+    color: #594d2c
+}
+
+.card-24-35 .card-24-first-owner div, .card-24-pack-35 .card-24-pack-first-owner div, .card-24-builder-35 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-35 .card-24-playstyle-container path, .card-24-small-35 .card-24-small-playstyle-container path, .card-24-pack-35 .card-24-pack-playstyle-container path, .card-24-builder-35 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-35 .card-24-extra-info-txt, .card-24-35 .card-24-extra-info-foot, .card-24-35 .card-24-foot-txt, .card-24-pack-35 .card-24-pack-extra-info-txt, .card-24-pack-35 .card-24-pack-extra-info-foot, .card-24-pack-35 .card-24-pack-foot-txt, .card-24-builder-35 .card-24-builder-extra-info-txt, .card-24-builder-35 .card-24-builder-extra-info-foot, .card-24-builder-35 .card-24-builder-foot-txt {
+    border-color: #594d2c
+}
+
+.card-24-small-35 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/35.png);
+    color: #594d2c
+}
+
+.card-24-117, .card-24-pack-117, .card-24-builder-117 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/117.png);
+    color: #fafffe
+}
+
+.card-24-117 .card-24-first-owner div, .card-24-pack-117 .card-24-pack-first-owner div, .card-24-builder-117 .card-24-builder-first-owner div {
+    color: #005047
+}
+
+.card-24-117 .card-24-playstyle-container path, .card-24-small-117 .card-24-small-playstyle-container path, .card-24-pack-117 .card-24-pack-playstyle-container path, .card-24-builder-117 .card-24-builder-playstyle-container path {
+    fill: #005047
+}
+
+.card-24-117 .card-24-extra-info-txt, .card-24-117 .card-24-extra-info-foot, .card-24-117 .card-24-foot-txt, .card-24-pack-117 .card-24-pack-extra-info-txt, .card-24-pack-117 .card-24-pack-extra-info-foot, .card-24-pack-117 .card-24-pack-foot-txt, .card-24-builder-117 .card-24-builder-extra-info-txt, .card-24-builder-117 .card-24-builder-extra-info-foot, .card-24-builder-117 .card-24-builder-foot-txt {
+    border-color: #fafffe
+}
+
+.card-24-small-117 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/117.png);
+    color: #fafffe
+}
+
+.card-24-47, .card-24-pack-47, .card-24-builder-47 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/47.png);
+    color: #fafffe
+}
+
+.card-24-47 .card-24-first-owner div, .card-24-pack-47 .card-24-pack-first-owner div, .card-24-builder-47 .card-24-builder-first-owner div {
+    color: #005047
+}
+
+.card-24-47 .card-24-playstyle-container path, .card-24-small-47 .card-24-small-playstyle-container path, .card-24-pack-47 .card-24-pack-playstyle-container path, .card-24-builder-47 .card-24-builder-playstyle-container path {
+    fill: #005047
+}
+
+.card-24-47 .card-24-extra-info-txt, .card-24-47 .card-24-extra-info-foot, .card-24-47 .card-24-foot-txt, .card-24-pack-47 .card-24-pack-extra-info-txt, .card-24-pack-47 .card-24-pack-extra-info-foot, .card-24-pack-47 .card-24-pack-foot-txt, .card-24-builder-47 .card-24-builder-extra-info-txt, .card-24-builder-47 .card-24-builder-extra-info-foot, .card-24-builder-47 .card-24-builder-foot-txt {
+    border-color: #fafffe
+}
+
+.card-24-small-47 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/47.png);
+    color: #fafffe
+}
+
+.card-24-116, .card-24-pack-116, .card-24-builder-116 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/116.png);
+    color: #fff
+}
+
+.card-24-116 .card-24-first-owner div, .card-24-pack-116 .card-24-pack-first-owner div, .card-24-builder-116 .card-24-builder-first-owner div {
+    color: #c71515
+}
+
+.card-24-116 .card-24-playstyle-container path, .card-24-small-116 .card-24-small-playstyle-container path, .card-24-pack-116 .card-24-pack-playstyle-container path, .card-24-builder-116 .card-24-builder-playstyle-container path {
+    fill: #c71515
+}
+
+.card-24-116 .card-24-extra-info-txt, .card-24-116 .card-24-extra-info-foot, .card-24-116 .card-24-foot-txt, .card-24-pack-116 .card-24-pack-extra-info-txt, .card-24-pack-116 .card-24-pack-extra-info-foot, .card-24-pack-116 .card-24-pack-foot-txt, .card-24-builder-116 .card-24-builder-extra-info-txt, .card-24-builder-116 .card-24-builder-extra-info-foot, .card-24-builder-116 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-116 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/116.png);
+    color: #fff
+}
+
+.card-24-108, .card-24-pack-108, .card-24-builder-108 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/108.png);
+    color: #fff
+}
+
+.card-24-108 .card-24-first-owner div, .card-24-pack-108 .card-24-pack-first-owner div, .card-24-builder-108 .card-24-builder-first-owner div {
+    color: #042455
+}
+
+.card-24-108 .card-24-playstyle-container path, .card-24-small-108 .card-24-small-playstyle-container path, .card-24-pack-108 .card-24-pack-playstyle-container path, .card-24-builder-108 .card-24-builder-playstyle-container path {
+    fill: #042455
+}
+
+.card-24-108 .card-24-extra-info-txt, .card-24-108 .card-24-extra-info-foot, .card-24-108 .card-24-foot-txt, .card-24-pack-108 .card-24-pack-extra-info-txt, .card-24-pack-108 .card-24-pack-extra-info-foot, .card-24-pack-108 .card-24-pack-foot-txt, .card-24-builder-108 .card-24-builder-extra-info-txt, .card-24-builder-108 .card-24-builder-extra-info-foot, .card-24-builder-108 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-108 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/108.png);
+    color: #fff
+}
+
+.card-24-64, .card-24-pack-64, .card-24-builder-64 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/64.png);
+    color: #e8f0ff
+}
+
+.card-24-64 .card-24-first-owner div, .card-24-pack-64 .card-24-pack-first-owner div, .card-24-builder-64 .card-24-builder-first-owner div {
+    color: #161a4f
+}
+
+.card-24-64 .card-24-playstyle-container path, .card-24-small-64 .card-24-small-playstyle-container path, .card-24-pack-64 .card-24-pack-playstyle-container path, .card-24-builder-64 .card-24-builder-playstyle-container path {
+    fill: #161a4f
+}
+
+.card-24-64 .card-24-extra-info-txt, .card-24-64 .card-24-extra-info-foot, .card-24-64 .card-24-foot-txt, .card-24-pack-64 .card-24-pack-extra-info-txt, .card-24-pack-64 .card-24-pack-extra-info-foot, .card-24-pack-64 .card-24-pack-foot-txt, .card-24-builder-64 .card-24-builder-extra-info-txt, .card-24-builder-64 .card-24-builder-extra-info-foot, .card-24-builder-64 .card-24-builder-foot-txt {
+    border-color: #e8f0ff
+}
+
+.card-24-small-64 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/64.png);
+    color: #e8f0ff
+}
+
+.card-24-5, .card-24-pack-5, .card-24-builder-5 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/5.png);
+    color: #f5db9b
+}
+
+.card-24-5 .card-24-first-owner div, .card-24-pack-5 .card-24-pack-first-owner div, .card-24-builder-5 .card-24-builder-first-owner div {
+    color: #161a4f
+}
+
+.card-24-5 .card-24-playstyle-container path, .card-24-small-5 .card-24-small-playstyle-container path, .card-24-pack-5 .card-24-pack-playstyle-container path, .card-24-builder-5 .card-24-builder-playstyle-container path {
+    fill: #161a4f
+}
+
+.card-24-5 .card-24-extra-info-txt, .card-24-5 .card-24-extra-info-foot, .card-24-5 .card-24-foot-txt, .card-24-pack-5 .card-24-pack-extra-info-txt, .card-24-pack-5 .card-24-pack-extra-info-foot, .card-24-pack-5 .card-24-pack-foot-txt, .card-24-builder-5 .card-24-builder-extra-info-txt, .card-24-builder-5 .card-24-builder-extra-info-foot, .card-24-builder-5 .card-24-builder-foot-txt {
+    border-color: #f5db9b
+}
+
+.card-24-small-5 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/5.png);
+    color: #f5db9b
+}
+
+.card-24-155, .card-24-pack-155, .card-24-builder-155 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/155.png);
+    color: #594d2c
+}
+
+.card-24-155 .card-24-first-owner div, .card-24-pack-155 .card-24-pack-first-owner div, .card-24-builder-155 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-155 .card-24-playstyle-container path, .card-24-small-155 .card-24-small-playstyle-container path, .card-24-pack-155 .card-24-pack-playstyle-container path, .card-24-builder-155 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-155 .card-24-extra-info-txt, .card-24-155 .card-24-extra-info-foot, .card-24-155 .card-24-foot-txt, .card-24-pack-155 .card-24-pack-extra-info-txt, .card-24-pack-155 .card-24-pack-extra-info-foot, .card-24-pack-155 .card-24-pack-foot-txt, .card-24-builder-155 .card-24-builder-extra-info-txt, .card-24-builder-155 .card-24-builder-extra-info-foot, .card-24-builder-155 .card-24-builder-foot-txt {
+    border-color: #594d2c
+}
+
+.card-24-small-155 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/155.png);
+    color: #594d2c
+}
+
+.card-24-32, .card-24-pack-32, .card-24-builder-32 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/32.png);
+    color: #fff
+}
+
+.card-24-32 .card-24-first-owner div, .card-24-pack-32 .card-24-pack-first-owner div, .card-24-builder-32 .card-24-builder-first-owner div {
+    color: #012553
+}
+
+.card-24-32 .card-24-playstyle-container path, .card-24-small-32 .card-24-small-playstyle-container path, .card-24-pack-32 .card-24-pack-playstyle-container path, .card-24-builder-32 .card-24-builder-playstyle-container path {
+    fill: #012553
+}
+
+.card-24-32 .card-24-extra-info-txt, .card-24-32 .card-24-extra-info-foot, .card-24-32 .card-24-foot-txt, .card-24-pack-32 .card-24-pack-extra-info-txt, .card-24-pack-32 .card-24-pack-extra-info-foot, .card-24-pack-32 .card-24-pack-foot-txt, .card-24-builder-32 .card-24-builder-extra-info-txt, .card-24-builder-32 .card-24-builder-extra-info-foot, .card-24-builder-32 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-32 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/32.png);
+    color: #fff
+}
+
+.card-24-124, .card-24-pack-124, .card-24-builder-124 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/124.png);
+    color: #fff
+}
+
+.card-24-124 .card-24-first-owner div, .card-24-pack-124 .card-24-pack-first-owner div, .card-24-builder-124 .card-24-builder-first-owner div {
+    color: #111060
+}
+
+.card-24-124 .card-24-playstyle-container path, .card-24-small-124 .card-24-small-playstyle-container path, .card-24-pack-124 .card-24-pack-playstyle-container path, .card-24-builder-124 .card-24-builder-playstyle-container path {
+    fill: #111060
+}
+
+.card-24-124 .card-24-extra-info-txt, .card-24-124 .card-24-extra-info-foot, .card-24-124 .card-24-foot-txt, .card-24-pack-124 .card-24-pack-extra-info-txt, .card-24-pack-124 .card-24-pack-extra-info-foot, .card-24-pack-124 .card-24-pack-foot-txt, .card-24-builder-124 .card-24-builder-extra-info-txt, .card-24-builder-124 .card-24-builder-extra-info-foot, .card-24-builder-124 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-124 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/124.png);
+    color: #fff
+}
+
+.card-24-71, .card-24-pack-71, .card-24-builder-71 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/71.png);
+    color: #69038b
+}
+
+.card-24-71 .card-24-first-owner div, .card-24-pack-71 .card-24-pack-first-owner div, .card-24-builder-71 .card-24-builder-first-owner div {
+    color: #e4e7ff
+}
+
+.card-24-71 .card-24-playstyle-container path, .card-24-small-71 .card-24-small-playstyle-container path, .card-24-pack-71 .card-24-pack-playstyle-container path, .card-24-builder-71 .card-24-builder-playstyle-container path {
+    fill: #e4e7ff
+}
+
+.card-24-71 .card-24-extra-info-txt, .card-24-71 .card-24-extra-info-foot, .card-24-71 .card-24-foot-txt, .card-24-pack-71 .card-24-pack-extra-info-txt, .card-24-pack-71 .card-24-pack-extra-info-foot, .card-24-pack-71 .card-24-pack-foot-txt, .card-24-builder-71 .card-24-builder-extra-info-txt, .card-24-builder-71 .card-24-builder-extra-info-foot, .card-24-builder-71 .card-24-builder-foot-txt {
+    border-color: #69038b
+}
+
+.card-24-small-71 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/71.png);
+    color: #69038b
+}
+
+.card-24-170, .card-24-pack-170, .card-24-builder-170 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/170.png);
+    color: #594d2c
+}
+
+.card-24-170 .card-24-first-owner div, .card-24-pack-170 .card-24-pack-first-owner div, .card-24-builder-170 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-170 .card-24-playstyle-container path, .card-24-small-170 .card-24-small-playstyle-container path, .card-24-pack-170 .card-24-pack-playstyle-container path, .card-24-builder-170 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-170 .card-24-extra-info-txt, .card-24-170 .card-24-extra-info-foot, .card-24-170 .card-24-foot-txt, .card-24-pack-170 .card-24-pack-extra-info-txt, .card-24-pack-170 .card-24-pack-extra-info-foot, .card-24-pack-170 .card-24-pack-foot-txt, .card-24-builder-170 .card-24-builder-extra-info-txt, .card-24-builder-170 .card-24-builder-extra-info-foot, .card-24-builder-170 .card-24-builder-foot-txt {
+    border-color: #594d2c
+}
+
+.card-24-small-170 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/170.png);
+    color: #594d2c
+}
+
+.card-24-55, .card-24-pack-55, .card-24-builder-55 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/55.png);
+    color: #69038b
+}
+
+.card-24-55 .card-24-first-owner div, .card-24-pack-55 .card-24-pack-first-owner div, .card-24-builder-55 .card-24-builder-first-owner div {
+    color: #e4e7ff
+}
+
+.card-24-55 .card-24-playstyle-container path, .card-24-small-55 .card-24-small-playstyle-container path, .card-24-pack-55 .card-24-pack-playstyle-container path, .card-24-builder-55 .card-24-builder-playstyle-container path {
+    fill: #e4e7ff
+}
+
+.card-24-55 .card-24-extra-info-txt, .card-24-55 .card-24-extra-info-foot, .card-24-55 .card-24-foot-txt, .card-24-pack-55 .card-24-pack-extra-info-txt, .card-24-pack-55 .card-24-pack-extra-info-foot, .card-24-pack-55 .card-24-pack-foot-txt, .card-24-builder-55 .card-24-builder-extra-info-txt, .card-24-builder-55 .card-24-builder-extra-info-foot, .card-24-builder-55 .card-24-builder-foot-txt {
+    border-color: #69038b
+}
+
+.card-24-small-55 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/55.png);
+    color: #69038b
+}
+
+.card-24-66, .card-24-pack-66, .card-24-builder-66 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/66.png);
+    color: #69038b
+}
+
+.card-24-66 .card-24-first-owner div, .card-24-pack-66 .card-24-pack-first-owner div, .card-24-builder-66 .card-24-builder-first-owner div {
+    color: #e4e7ff
+}
+
+.card-24-66 .card-24-playstyle-container path, .card-24-small-66 .card-24-small-playstyle-container path, .card-24-pack-66 .card-24-pack-playstyle-container path, .card-24-builder-66 .card-24-builder-playstyle-container path {
+    fill: #e4e7ff
+}
+
+.card-24-66 .card-24-extra-info-txt, .card-24-66 .card-24-extra-info-foot, .card-24-66 .card-24-foot-txt, .card-24-pack-66 .card-24-pack-extra-info-txt, .card-24-pack-66 .card-24-pack-extra-info-foot, .card-24-pack-66 .card-24-pack-foot-txt, .card-24-builder-66 .card-24-builder-extra-info-txt, .card-24-builder-66 .card-24-builder-extra-info-foot, .card-24-builder-66 .card-24-builder-foot-txt {
+    border-color: #69038b
+}
+
+.card-24-small-66 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/66.png);
+    color: #69038b
+}
+
+.card-24-111, .card-24-pack-111, .card-24-builder-111 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/111.png);
+    color: #fff
+}
+
+.card-24-111 .card-24-first-owner div, .card-24-pack-111 .card-24-pack-first-owner div, .card-24-builder-111 .card-24-builder-first-owner div {
+    color: #0a79bc
+}
+
+.card-24-111 .card-24-playstyle-container path, .card-24-small-111 .card-24-small-playstyle-container path, .card-24-pack-111 .card-24-pack-playstyle-container path, .card-24-builder-111 .card-24-builder-playstyle-container path {
+    fill: #0a79bc
+}
+
+.card-24-111 .card-24-extra-info-txt, .card-24-111 .card-24-extra-info-foot, .card-24-111 .card-24-foot-txt, .card-24-pack-111 .card-24-pack-extra-info-txt, .card-24-pack-111 .card-24-pack-extra-info-foot, .card-24-pack-111 .card-24-pack-foot-txt, .card-24-builder-111 .card-24-builder-extra-info-txt, .card-24-builder-111 .card-24-builder-extra-info-foot, .card-24-builder-111 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-111 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/111.png);
+    color: #fff
+}
+
+.card-24-135, .card-24-pack-135, .card-24-builder-135 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/135.png);
+    color: #fff
+}
+
+.card-24-135 .card-24-first-owner div, .card-24-pack-135 .card-24-pack-first-owner div, .card-24-builder-135 .card-24-builder-first-owner div {
+    color: #6d29d5
+}
+
+.card-24-135 .card-24-playstyle-container path, .card-24-small-135 .card-24-small-playstyle-container path, .card-24-pack-135 .card-24-pack-playstyle-container path, .card-24-builder-135 .card-24-builder-playstyle-container path {
+    fill: #6d29d5
+}
+
+.card-24-135 .card-24-extra-info-txt, .card-24-135 .card-24-extra-info-foot, .card-24-135 .card-24-foot-txt, .card-24-pack-135 .card-24-pack-extra-info-txt, .card-24-pack-135 .card-24-pack-extra-info-foot, .card-24-pack-135 .card-24-pack-foot-txt, .card-24-builder-135 .card-24-builder-extra-info-txt, .card-24-builder-135 .card-24-builder-extra-info-foot, .card-24-builder-135 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-135 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/135.png);
+    color: #fff
+}
+
+.card-24-30, .card-24-pack-30, .card-24-builder-30 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/30.png);
+    color: #fff
+}
+
+.card-24-30 .card-24-first-owner div, .card-24-pack-30 .card-24-pack-first-owner div, .card-24-builder-30 .card-24-builder-first-owner div {
+    color: #6d29d5
+}
+
+.card-24-30 .card-24-playstyle-container path, .card-24-small-30 .card-24-small-playstyle-container path, .card-24-pack-30 .card-24-pack-playstyle-container path, .card-24-builder-30 .card-24-builder-playstyle-container path {
+    fill: #6d29d5
+}
+
+.card-24-30 .card-24-extra-info-txt, .card-24-30 .card-24-extra-info-foot, .card-24-30 .card-24-foot-txt, .card-24-pack-30 .card-24-pack-extra-info-txt, .card-24-pack-30 .card-24-pack-extra-info-foot, .card-24-pack-30 .card-24-pack-foot-txt, .card-24-builder-30 .card-24-builder-extra-info-txt, .card-24-builder-30 .card-24-builder-extra-info-foot, .card-24-builder-30 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-30 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/30.png);
+    color: #fff
+}
+
+.card-24-88, .card-24-pack-88, .card-24-builder-88 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/88.png);
+    color: #fff
+}
+
+.card-24-88 .card-24-first-owner div, .card-24-pack-88 .card-24-pack-first-owner div, .card-24-builder-88 .card-24-builder-first-owner div {
+    color: #9335fe
+}
+
+.card-24-88 .card-24-playstyle-container path, .card-24-small-88 .card-24-small-playstyle-container path, .card-24-pack-88 .card-24-pack-playstyle-container path, .card-24-builder-88 .card-24-builder-playstyle-container path {
+    fill: #9335fe
+}
+
+.card-24-88 .card-24-extra-info-txt, .card-24-88 .card-24-extra-info-foot, .card-24-88 .card-24-foot-txt, .card-24-pack-88 .card-24-pack-extra-info-txt, .card-24-pack-88 .card-24-pack-extra-info-foot, .card-24-pack-88 .card-24-pack-foot-txt, .card-24-builder-88 .card-24-builder-extra-info-txt, .card-24-builder-88 .card-24-builder-extra-info-foot, .card-24-builder-88 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-88 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/88.png);
+    color: #fff
+}
+
+.card-24-89, .card-24-pack-89, .card-24-builder-89 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/89.png);
+    color: #fff
+}
+
+.card-24-89 .card-24-first-owner div, .card-24-pack-89 .card-24-pack-first-owner div, .card-24-builder-89 .card-24-builder-first-owner div {
+    color: #9335fe
+}
+
+.card-24-89 .card-24-playstyle-container path, .card-24-small-89 .card-24-small-playstyle-container path, .card-24-pack-89 .card-24-pack-playstyle-container path, .card-24-builder-89 .card-24-builder-playstyle-container path {
+    fill: #9335fe
+}
+
+.card-24-89 .card-24-extra-info-txt, .card-24-89 .card-24-extra-info-foot, .card-24-89 .card-24-foot-txt, .card-24-pack-89 .card-24-pack-extra-info-txt, .card-24-pack-89 .card-24-pack-extra-info-foot, .card-24-pack-89 .card-24-pack-foot-txt, .card-24-builder-89 .card-24-builder-extra-info-txt, .card-24-builder-89 .card-24-builder-extra-info-foot, .card-24-builder-89 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-89 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/89.png);
+    color: #fff
+}
+
+.card-24-149, .card-24-pack-149, .card-24-builder-149 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/149.png);
+    color: #594d2c
+}
+
+.card-24-149 .card-24-first-owner div, .card-24-pack-149 .card-24-pack-first-owner div, .card-24-builder-149 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-149 .card-24-playstyle-container path, .card-24-small-149 .card-24-small-playstyle-container path, .card-24-pack-149 .card-24-pack-playstyle-container path, .card-24-builder-149 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-149 .card-24-extra-info-txt, .card-24-149 .card-24-extra-info-foot, .card-24-149 .card-24-foot-txt, .card-24-pack-149 .card-24-pack-extra-info-txt, .card-24-pack-149 .card-24-pack-extra-info-foot, .card-24-pack-149 .card-24-pack-foot-txt, .card-24-builder-149 .card-24-builder-extra-info-txt, .card-24-builder-149 .card-24-builder-extra-info-foot, .card-24-builder-149 .card-24-builder-foot-txt {
+    border-color: #594d2c
+}
+
+.card-24-small-149 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/149.png);
+    color: #594d2c
+}
+
+.card-24-160, .card-24-pack-160, .card-24-builder-160 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/160.png);
+    color: #fffdfc
+}
+
+.card-24-160 .card-24-first-owner div, .card-24-pack-160 .card-24-pack-first-owner div, .card-24-builder-160 .card-24-builder-first-owner div {
+    color: #e8094c
+}
+
+.card-24-160 .card-24-playstyle-container path, .card-24-small-160 .card-24-small-playstyle-container path, .card-24-pack-160 .card-24-pack-playstyle-container path, .card-24-builder-160 .card-24-builder-playstyle-container path {
+    fill: #e8094c
+}
+
+.card-24-160 .card-24-extra-info-txt, .card-24-160 .card-24-extra-info-foot, .card-24-160 .card-24-foot-txt, .card-24-pack-160 .card-24-pack-extra-info-txt, .card-24-pack-160 .card-24-pack-extra-info-foot, .card-24-pack-160 .card-24-pack-foot-txt, .card-24-builder-160 .card-24-builder-extra-info-txt, .card-24-builder-160 .card-24-builder-extra-info-foot, .card-24-builder-160 .card-24-builder-foot-txt {
+    border-color: #fffdfc
+}
+
+.card-24-small-160 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/160.png);
+    color: #fffdfc
+}
+
+.card-24-161, .card-24-pack-161, .card-24-builder-161 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/161.png);
+    color: #594d2c
+}
+
+.card-24-161 .card-24-first-owner div, .card-24-pack-161 .card-24-pack-first-owner div, .card-24-builder-161 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-161 .card-24-playstyle-container path, .card-24-small-161 .card-24-small-playstyle-container path, .card-24-pack-161 .card-24-pack-playstyle-container path, .card-24-builder-161 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-161 .card-24-extra-info-txt, .card-24-161 .card-24-extra-info-foot, .card-24-161 .card-24-foot-txt, .card-24-pack-161 .card-24-pack-extra-info-txt, .card-24-pack-161 .card-24-pack-extra-info-foot, .card-24-pack-161 .card-24-pack-foot-txt, .card-24-builder-161 .card-24-builder-extra-info-txt, .card-24-builder-161 .card-24-builder-extra-info-foot, .card-24-builder-161 .card-24-builder-foot-txt {
+    border-color: #594d2c
+}
+
+.card-24-small-161 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/161.png);
+    color: #594d2c
+}
+
+.card-24-36, .card-24-pack-36, .card-24-builder-36 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/36.png);
+    color: #fbebab
+}
+
+.card-24-36 .card-24-first-owner div, .card-24-pack-36 .card-24-pack-first-owner div, .card-24-builder-36 .card-24-builder-first-owner div {
+    color: #090f23
+}
+
+.card-24-36 .card-24-playstyle-container path, .card-24-small-36 .card-24-small-playstyle-container path, .card-24-pack-36 .card-24-pack-playstyle-container path, .card-24-builder-36 .card-24-builder-playstyle-container path {
+    fill: #090f23
+}
+
+.card-24-36 .card-24-extra-info-txt, .card-24-36 .card-24-extra-info-foot, .card-24-36 .card-24-foot-txt, .card-24-pack-36 .card-24-pack-extra-info-txt, .card-24-pack-36 .card-24-pack-extra-info-foot, .card-24-pack-36 .card-24-pack-foot-txt, .card-24-builder-36 .card-24-builder-extra-info-txt, .card-24-builder-36 .card-24-builder-extra-info-foot, .card-24-builder-36 .card-24-builder-foot-txt {
+    border-color: #fbebab
+}
+
+.card-24-small-36 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/36.png);
+    color: #fbebab
+}
+
+.card-24-92, .card-24-pack-92, .card-24-builder-92 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/92.png);
+    color: #eff9fe
+}
+
+.card-24-92 .card-24-first-owner div, .card-24-pack-92 .card-24-pack-first-owner div, .card-24-builder-92 .card-24-builder-first-owner div {
+    color: #0e1c39
+}
+
+.card-24-92 .card-24-playstyle-container path, .card-24-small-92 .card-24-small-playstyle-container path, .card-24-pack-92 .card-24-pack-playstyle-container path, .card-24-builder-92 .card-24-builder-playstyle-container path {
+    fill: #0e1c39
+}
+
+.card-24-92 .card-24-extra-info-txt, .card-24-92 .card-24-extra-info-foot, .card-24-92 .card-24-foot-txt, .card-24-pack-92 .card-24-pack-extra-info-txt, .card-24-pack-92 .card-24-pack-extra-info-foot, .card-24-pack-92 .card-24-pack-foot-txt, .card-24-builder-92 .card-24-builder-extra-info-txt, .card-24-builder-92 .card-24-builder-extra-info-foot, .card-24-builder-92 .card-24-builder-foot-txt {
+    border-color: #eff9fe
+}
+
+.card-24-small-92 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/92.png);
+    color: #eff9fe
+}
+
+.card-24-11, .card-24-pack-11, .card-24-builder-11 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/11.png);
+    color: #fbebab
+}
+
+.card-24-11 .card-24-first-owner div, .card-24-pack-11 .card-24-pack-first-owner div, .card-24-builder-11 .card-24-builder-first-owner div {
+    color: #090f23
+}
+
+.card-24-11 .card-24-playstyle-container path, .card-24-small-11 .card-24-small-playstyle-container path, .card-24-pack-11 .card-24-pack-playstyle-container path, .card-24-builder-11 .card-24-builder-playstyle-container path {
+    fill: #090f23
+}
+
+.card-24-11 .card-24-extra-info-txt, .card-24-11 .card-24-extra-info-foot, .card-24-11 .card-24-foot-txt, .card-24-pack-11 .card-24-pack-extra-info-txt, .card-24-pack-11 .card-24-pack-extra-info-foot, .card-24-pack-11 .card-24-pack-foot-txt, .card-24-builder-11 .card-24-builder-extra-info-txt, .card-24-builder-11 .card-24-builder-extra-info-foot, .card-24-builder-11 .card-24-builder-foot-txt {
+    border-color: #fbebab
+}
+
+.card-24-small-11 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/11.png);
+    color: #fbebab
+}
+
+.card-24-65, .card-24-pack-65, .card-24-builder-65 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/65.png);
+    color: #eff9fe
+}
+
+.card-24-65 .card-24-first-owner div, .card-24-pack-65 .card-24-pack-first-owner div, .card-24-builder-65 .card-24-builder-first-owner div {
+    color: #0e1c39
+}
+
+.card-24-65 .card-24-playstyle-container path, .card-24-small-65 .card-24-small-playstyle-container path, .card-24-pack-65 .card-24-pack-playstyle-container path, .card-24-builder-65 .card-24-builder-playstyle-container path {
+    fill: #0e1c39
+}
+
+.card-24-65 .card-24-extra-info-txt, .card-24-65 .card-24-extra-info-foot, .card-24-65 .card-24-foot-txt, .card-24-pack-65 .card-24-pack-extra-info-txt, .card-24-pack-65 .card-24-pack-extra-info-foot, .card-24-pack-65 .card-24-pack-foot-txt, .card-24-builder-65 .card-24-builder-extra-info-txt, .card-24-builder-65 .card-24-builder-extra-info-foot, .card-24-builder-65 .card-24-builder-foot-txt {
+    border-color: #eff9fe
+}
+
+.card-24-small-65 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/65.png);
+    color: #eff9fe
+}
+
+.card-24-93, .card-24-pack-93, .card-24-builder-93 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/93.png);
+    color: #fbebab
+}
+
+.card-24-93 .card-24-first-owner div, .card-24-pack-93 .card-24-pack-first-owner div, .card-24-builder-93 .card-24-builder-first-owner div {
+    color: #381515
+}
+
+.card-24-93 .card-24-playstyle-container path, .card-24-small-93 .card-24-small-playstyle-container path, .card-24-pack-93 .card-24-pack-playstyle-container path, .card-24-builder-93 .card-24-builder-playstyle-container path {
+    fill: #381515
+}
+
+.card-24-93 .card-24-extra-info-txt, .card-24-93 .card-24-extra-info-foot, .card-24-93 .card-24-foot-txt, .card-24-pack-93 .card-24-pack-extra-info-txt, .card-24-pack-93 .card-24-pack-extra-info-foot, .card-24-pack-93 .card-24-pack-foot-txt, .card-24-builder-93 .card-24-builder-extra-info-txt, .card-24-builder-93 .card-24-builder-extra-info-foot, .card-24-builder-93 .card-24-builder-foot-txt {
+    border-color: #fbebab
+}
+
+.card-24-small-93 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/93.png);
+    color: #fbebab
+}
+
+.card-24-127, .card-24-pack-127, .card-24-builder-127 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/127.png);
+    color: #fbebab
+}
+
+.card-24-127 .card-24-first-owner div, .card-24-pack-127 .card-24-pack-first-owner div, .card-24-builder-127 .card-24-builder-first-owner div {
+    color: #381515
+}
+
+.card-24-127 .card-24-playstyle-container path, .card-24-small-127 .card-24-small-playstyle-container path, .card-24-pack-127 .card-24-pack-playstyle-container path, .card-24-builder-127 .card-24-builder-playstyle-container path {
+    fill: #381515
+}
+
+.card-24-127 .card-24-extra-info-txt, .card-24-127 .card-24-extra-info-foot, .card-24-127 .card-24-foot-txt, .card-24-pack-127 .card-24-pack-extra-info-txt, .card-24-pack-127 .card-24-pack-extra-info-foot, .card-24-pack-127 .card-24-pack-foot-txt, .card-24-builder-127 .card-24-builder-extra-info-txt, .card-24-builder-127 .card-24-builder-extra-info-foot, .card-24-builder-127 .card-24-builder-foot-txt {
+    border-color: #fbebab
+}
+
+.card-24-small-127 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/127.png);
+    color: #fbebab
+}
+
+.card-24-38, .card-24-pack-38, .card-24-builder-38 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/38.png);
+    color: #fcfdff
+}
+
+.card-24-38 .card-24-first-owner div, .card-24-pack-38 .card-24-pack-first-owner div, .card-24-builder-38 .card-24-builder-first-owner div {
+    color: #024fc9
+}
+
+.card-24-38 .card-24-playstyle-container path, .card-24-small-38 .card-24-small-playstyle-container path, .card-24-pack-38 .card-24-pack-playstyle-container path, .card-24-builder-38 .card-24-builder-playstyle-container path {
+    fill: #024fc9
+}
+
+.card-24-38 .card-24-extra-info-txt, .card-24-38 .card-24-extra-info-foot, .card-24-38 .card-24-foot-txt, .card-24-pack-38 .card-24-pack-extra-info-txt, .card-24-pack-38 .card-24-pack-extra-info-foot, .card-24-pack-38 .card-24-pack-foot-txt, .card-24-builder-38 .card-24-builder-extra-info-txt, .card-24-builder-38 .card-24-builder-extra-info-foot, .card-24-builder-38 .card-24-builder-foot-txt {
+    border-color: #fcfdff
+}
+
+.card-24-small-38 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/38.png);
+    color: #fcfdff
+}
+
+.card-24-39, .card-24-pack-39, .card-24-builder-39 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/39.png);
+    color: #594d2c
+}
+
+.card-24-39 .card-24-first-owner div, .card-24-pack-39 .card-24-pack-first-owner div, .card-24-builder-39 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-39 .card-24-playstyle-container path, .card-24-small-39 .card-24-small-playstyle-container path, .card-24-pack-39 .card-24-pack-playstyle-container path, .card-24-builder-39 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-39 .card-24-extra-info-txt, .card-24-39 .card-24-extra-info-foot, .card-24-39 .card-24-foot-txt, .card-24-pack-39 .card-24-pack-extra-info-txt, .card-24-pack-39 .card-24-pack-extra-info-foot, .card-24-pack-39 .card-24-pack-foot-txt, .card-24-builder-39 .card-24-builder-extra-info-txt, .card-24-builder-39 .card-24-builder-extra-info-foot, .card-24-builder-39 .card-24-builder-foot-txt {
+    border-color: #594d2c
+}
+
+.card-24-small-39 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/39.png);
+    color: #594d2c
+}
+
+.card-24-40, .card-24-pack-40, .card-24-builder-40 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/40.png);
+    color: #fff
+}
+
+.card-24-40 .card-24-first-owner div, .card-24-pack-40 .card-24-pack-first-owner div, .card-24-builder-40 .card-24-builder-first-owner div {
+    color: #3a9268
+}
+
+.card-24-40 .card-24-playstyle-container path, .card-24-small-40 .card-24-small-playstyle-container path, .card-24-pack-40 .card-24-pack-playstyle-container path, .card-24-builder-40 .card-24-builder-playstyle-container path {
+    fill: #3a9268
+}
+
+.card-24-40 .card-24-extra-info-txt, .card-24-40 .card-24-extra-info-foot, .card-24-40 .card-24-foot-txt, .card-24-pack-40 .card-24-pack-extra-info-txt, .card-24-pack-40 .card-24-pack-extra-info-foot, .card-24-pack-40 .card-24-pack-foot-txt, .card-24-builder-40 .card-24-builder-extra-info-txt, .card-24-builder-40 .card-24-builder-extra-info-foot, .card-24-builder-40 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-40 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/40.png);
+    color: #fff
+}
+
+.card-24-41, .card-24-pack-41, .card-24-builder-41 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/41.png);
+    color: #fff
+}
+
+.card-24-41 .card-24-first-owner div, .card-24-pack-41 .card-24-pack-first-owner div, .card-24-builder-41 .card-24-builder-first-owner div {
+    color: #18274e
+}
+
+.card-24-41 .card-24-playstyle-container path, .card-24-small-41 .card-24-small-playstyle-container path, .card-24-pack-41 .card-24-pack-playstyle-container path, .card-24-builder-41 .card-24-builder-playstyle-container path {
+    fill: #18274e
+}
+
+.card-24-41 .card-24-extra-info-txt, .card-24-41 .card-24-extra-info-foot, .card-24-41 .card-24-foot-txt, .card-24-pack-41 .card-24-pack-extra-info-txt, .card-24-pack-41 .card-24-pack-extra-info-foot, .card-24-pack-41 .card-24-pack-foot-txt, .card-24-builder-41 .card-24-builder-extra-info-txt, .card-24-builder-41 .card-24-builder-extra-info-foot, .card-24-builder-41 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-41 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/41.png);
+    color: #fff
+}
+
+.card-24-73, .card-24-pack-73, .card-24-builder-73 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/73.png);
+    color: #fff
+}
+
+.card-24-73 .card-24-first-owner div, .card-24-pack-73 .card-24-pack-first-owner div, .card-24-builder-73 .card-24-builder-first-owner div {
+    color: #644730
+}
+
+.card-24-73 .card-24-playstyle-container path, .card-24-small-73 .card-24-small-playstyle-container path, .card-24-pack-73 .card-24-pack-playstyle-container path, .card-24-builder-73 .card-24-builder-playstyle-container path {
+    fill: #644730
+}
+
+.card-24-73 .card-24-extra-info-txt, .card-24-73 .card-24-extra-info-foot, .card-24-73 .card-24-foot-txt, .card-24-pack-73 .card-24-pack-extra-info-txt, .card-24-pack-73 .card-24-pack-extra-info-foot, .card-24-pack-73 .card-24-pack-foot-txt, .card-24-builder-73 .card-24-builder-extra-info-txt, .card-24-builder-73 .card-24-builder-extra-info-foot, .card-24-builder-73 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-73 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/73.png);
+    color: #fff
+}
+
+.card-24-74, .card-24-pack-74, .card-24-builder-74 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/74.png);
+    color: #fff
+}
+
+.card-24-74 .card-24-first-owner div, .card-24-pack-74 .card-24-pack-first-owner div, .card-24-builder-74 .card-24-builder-first-owner div {
+    color: #644740
+}
+
+.card-24-74 .card-24-playstyle-container path, .card-24-small-74 .card-24-small-playstyle-container path, .card-24-pack-74 .card-24-pack-playstyle-container path, .card-24-builder-74 .card-24-builder-playstyle-container path {
+    fill: #644740
+}
+
+.card-24-74 .card-24-extra-info-txt, .card-24-74 .card-24-extra-info-foot, .card-24-74 .card-24-foot-txt, .card-24-pack-74 .card-24-pack-extra-info-txt, .card-24-pack-74 .card-24-pack-extra-info-foot, .card-24-pack-74 .card-24-pack-foot-txt, .card-24-builder-74 .card-24-builder-extra-info-txt, .card-24-builder-74 .card-24-builder-extra-info-foot, .card-24-builder-74 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-74 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/74.png);
+    color: #fff
+}
+
+.card-24-75, .card-24-pack-75, .card-24-builder-75 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/75.png);
+    color: #fff
+}
+
+.card-24-75 .card-24-first-owner div, .card-24-pack-75 .card-24-pack-first-owner div, .card-24-builder-75 .card-24-builder-first-owner div {
+    color: #132851
+}
+
+.card-24-75 .card-24-playstyle-container path, .card-24-small-75 .card-24-small-playstyle-container path, .card-24-pack-75 .card-24-pack-playstyle-container path, .card-24-builder-75 .card-24-builder-playstyle-container path {
+    fill: #132851
+}
+
+.card-24-75 .card-24-extra-info-txt, .card-24-75 .card-24-extra-info-foot, .card-24-75 .card-24-foot-txt, .card-24-pack-75 .card-24-pack-extra-info-txt, .card-24-pack-75 .card-24-pack-extra-info-foot, .card-24-pack-75 .card-24-pack-foot-txt, .card-24-builder-75 .card-24-builder-extra-info-txt, .card-24-builder-75 .card-24-builder-extra-info-foot, .card-24-builder-75 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-75 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/75.png);
+    color: #fff
+}
+
+.card-24-76, .card-24-pack-76, .card-24-builder-76 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/76.png);
+    color: #fff
+}
+
+.card-24-76 .card-24-first-owner div, .card-24-pack-76 .card-24-pack-first-owner div, .card-24-builder-76 .card-24-builder-first-owner div {
+    color: #132851
+}
+
+.card-24-76 .card-24-playstyle-container path, .card-24-small-76 .card-24-small-playstyle-container path, .card-24-pack-76 .card-24-pack-playstyle-container path, .card-24-builder-76 .card-24-builder-playstyle-container path {
+    fill: #132851
+}
+
+.card-24-76 .card-24-extra-info-txt, .card-24-76 .card-24-extra-info-foot, .card-24-76 .card-24-foot-txt, .card-24-pack-76 .card-24-pack-extra-info-txt, .card-24-pack-76 .card-24-pack-extra-info-foot, .card-24-pack-76 .card-24-pack-foot-txt, .card-24-builder-76 .card-24-builder-extra-info-txt, .card-24-builder-76 .card-24-builder-extra-info-foot, .card-24-builder-76 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-76 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/76.png);
+    color: #fff
+}
+
+.card-24-106, .card-24-pack-106, .card-24-builder-106 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/106.png);
+    color: #fff
+}
+
+.card-24-106 .card-24-first-owner div, .card-24-pack-106 .card-24-pack-first-owner div, .card-24-builder-106 .card-24-builder-first-owner div {
+    color: #11256f
+}
+
+.card-24-106 .card-24-playstyle-container path, .card-24-small-106 .card-24-small-playstyle-container path, .card-24-pack-106 .card-24-pack-playstyle-container path, .card-24-builder-106 .card-24-builder-playstyle-container path {
+    fill: #11256f
+}
+
+.card-24-106 .card-24-extra-info-txt, .card-24-106 .card-24-extra-info-foot, .card-24-106 .card-24-foot-txt, .card-24-pack-106 .card-24-pack-extra-info-txt, .card-24-pack-106 .card-24-pack-extra-info-foot, .card-24-pack-106 .card-24-pack-foot-txt, .card-24-builder-106 .card-24-builder-extra-info-txt, .card-24-builder-106 .card-24-builder-extra-info-foot, .card-24-builder-106 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-106 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/106.png);
+    color: #fff
+}
+
+.card-24-140, .card-24-pack-140, .card-24-builder-140 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/140.png);
+    color: #fff
+}
+
+.card-24-140 .card-24-first-owner div, .card-24-pack-140 .card-24-pack-first-owner div, .card-24-builder-140 .card-24-builder-first-owner div {
+    color: #114f7a
+}
+
+.card-24-140 .card-24-playstyle-container path, .card-24-small-140 .card-24-small-playstyle-container path, .card-24-pack-140 .card-24-pack-playstyle-container path, .card-24-builder-140 .card-24-builder-playstyle-container path {
+    fill: #114f7a
+}
+
+.card-24-140 .card-24-extra-info-txt, .card-24-140 .card-24-extra-info-foot, .card-24-140 .card-24-foot-txt, .card-24-pack-140 .card-24-pack-extra-info-txt, .card-24-pack-140 .card-24-pack-extra-info-foot, .card-24-pack-140 .card-24-pack-foot-txt, .card-24-builder-140 .card-24-builder-extra-info-txt, .card-24-builder-140 .card-24-builder-extra-info-foot, .card-24-builder-140 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-140 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/140.png);
+    color: #fff
+}
+
+.card-24-141, .card-24-pack-141, .card-24-builder-141 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/141.png);
+    color: #fff
+}
+
+.card-24-141 .card-24-first-owner div, .card-24-pack-141 .card-24-pack-first-owner div, .card-24-builder-141 .card-24-builder-first-owner div {
+    color: #114f7a
+}
+
+.card-24-141 .card-24-playstyle-container path, .card-24-small-141 .card-24-small-playstyle-container path, .card-24-pack-141 .card-24-pack-playstyle-container path, .card-24-builder-141 .card-24-builder-playstyle-container path {
+    fill: #114f7a
+}
+
+.card-24-141 .card-24-extra-info-txt, .card-24-141 .card-24-extra-info-foot, .card-24-141 .card-24-foot-txt, .card-24-pack-141 .card-24-pack-extra-info-txt, .card-24-pack-141 .card-24-pack-extra-info-foot, .card-24-pack-141 .card-24-pack-foot-txt, .card-24-builder-141 .card-24-builder-extra-info-txt, .card-24-builder-141 .card-24-builder-extra-info-foot, .card-24-builder-141 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-141 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/141.png);
+    color: #fff
+}
+
+.card-24-109, .card-24-pack-109, .card-24-builder-109 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/109.png);
+    color: #fff
+}
+
+.card-24-109 .card-24-first-owner div, .card-24-pack-109 .card-24-pack-first-owner div, .card-24-builder-109 .card-24-builder-first-owner div {
+    color: #8f723f
+}
+
+.card-24-109 .card-24-playstyle-container path, .card-24-small-109 .card-24-small-playstyle-container path, .card-24-pack-109 .card-24-pack-playstyle-container path, .card-24-builder-109 .card-24-builder-playstyle-container path {
+    fill: #8f723f
+}
+
+.card-24-109 .card-24-extra-info-txt, .card-24-109 .card-24-extra-info-foot, .card-24-109 .card-24-foot-txt, .card-24-pack-109 .card-24-pack-extra-info-txt, .card-24-pack-109 .card-24-pack-extra-info-foot, .card-24-pack-109 .card-24-pack-foot-txt, .card-24-builder-109 .card-24-builder-extra-info-txt, .card-24-builder-109 .card-24-builder-extra-info-foot, .card-24-builder-109 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-109 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/109.png);
+    color: #fff
+}
+
+.card-24-110, .card-24-pack-110, .card-24-builder-110 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/110.png);
+    color: #252a4d
+}
+
+.card-24-110 .card-24-first-owner div, .card-24-pack-110 .card-24-pack-first-owner div, .card-24-builder-110 .card-24-builder-first-owner div {
+    color: #ebecf2
+}
+
+.card-24-110 .card-24-playstyle-container path, .card-24-small-110 .card-24-small-playstyle-container path, .card-24-pack-110 .card-24-pack-playstyle-container path, .card-24-builder-110 .card-24-builder-playstyle-container path {
+    fill: #ebecf2
+}
+
+.card-24-110 .card-24-extra-info-txt, .card-24-110 .card-24-extra-info-foot, .card-24-110 .card-24-foot-txt, .card-24-pack-110 .card-24-pack-extra-info-txt, .card-24-pack-110 .card-24-pack-extra-info-foot, .card-24-pack-110 .card-24-pack-foot-txt, .card-24-builder-110 .card-24-builder-extra-info-txt, .card-24-builder-110 .card-24-builder-extra-info-foot, .card-24-builder-110 .card-24-builder-foot-txt {
+    border-color: #252a4d
+}
+
+.card-24-small-110 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/110.png);
+    color: #252a4d
+}
+
+.card-24-159, .card-24-pack-159, .card-24-builder-159 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/159.png);
+    color: #594d2c
+}
+
+.card-24-159 .card-24-first-owner div, .card-24-pack-159 .card-24-pack-first-owner div, .card-24-builder-159 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-159 .card-24-playstyle-container path, .card-24-small-159 .card-24-small-playstyle-container path, .card-24-pack-159 .card-24-pack-playstyle-container path, .card-24-builder-159 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-159 .card-24-extra-info-txt, .card-24-159 .card-24-extra-info-foot, .card-24-159 .card-24-foot-txt, .card-24-pack-159 .card-24-pack-extra-info-txt, .card-24-pack-159 .card-24-pack-extra-info-foot, .card-24-pack-159 .card-24-pack-foot-txt, .card-24-builder-159 .card-24-builder-extra-info-txt, .card-24-builder-159 .card-24-builder-extra-info-foot, .card-24-builder-159 .card-24-builder-foot-txt {
+    border-color: #594d2c
+}
+
+.card-24-small-159 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/159.png);
+    color: #594d2c
+}
+
+.card-24-9, .card-24-pack-9, .card-24-builder-9 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/9.png);
+    color: #fffcfe
+}
+
+.card-24-9 .card-24-first-owner div, .card-24-pack-9 .card-24-pack-first-owner div, .card-24-builder-9 .card-24-builder-first-owner div {
+    color: #ff239f
+}
+
+.card-24-9 .card-24-playstyle-container path, .card-24-small-9 .card-24-small-playstyle-container path, .card-24-pack-9 .card-24-pack-playstyle-container path, .card-24-builder-9 .card-24-builder-playstyle-container path {
+    fill: #ff239f
+}
+
+.card-24-9 .card-24-extra-info-txt, .card-24-9 .card-24-extra-info-foot, .card-24-9 .card-24-foot-txt, .card-24-pack-9 .card-24-pack-extra-info-txt, .card-24-pack-9 .card-24-pack-extra-info-foot, .card-24-pack-9 .card-24-pack-foot-txt, .card-24-builder-9 .card-24-builder-extra-info-txt, .card-24-builder-9 .card-24-builder-extra-info-foot, .card-24-builder-9 .card-24-builder-foot-txt {
+    border-color: #fffcfe
+}
+
+.card-24-small-9 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/9.png);
+    color: #fffcfe
+}
+
+.card-24-16, .card-24-pack-16, .card-24-builder-16 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/16.png);
+    color: #fffcfe
+}
+
+.card-24-16 .card-24-first-owner div, .card-24-pack-16 .card-24-pack-first-owner div, .card-24-builder-16 .card-24-builder-first-owner div {
+    color: #ff239f
+}
+
+.card-24-16 .card-24-playstyle-container path, .card-24-small-16 .card-24-small-playstyle-container path, .card-24-pack-16 .card-24-pack-playstyle-container path, .card-24-builder-16 .card-24-builder-playstyle-container path {
+    fill: #ff239f
+}
+
+.card-24-16 .card-24-extra-info-txt, .card-24-16 .card-24-extra-info-foot, .card-24-16 .card-24-foot-txt, .card-24-pack-16 .card-24-pack-extra-info-txt, .card-24-pack-16 .card-24-pack-extra-info-foot, .card-24-pack-16 .card-24-pack-foot-txt, .card-24-builder-16 .card-24-builder-extra-info-txt, .card-24-builder-16 .card-24-builder-extra-info-foot, .card-24-builder-16 .card-24-builder-foot-txt {
+    border-color: #fffcfe
+}
+
+.card-24-small-16 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/16.png);
+    color: #fffcfe
+}
+
+.card-24-153, .card-24-pack-153, .card-24-builder-153 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/153.png);
+    color: #594d2c
+}
+
+.card-24-153 .card-24-first-owner div, .card-24-pack-153 .card-24-pack-first-owner div, .card-24-builder-153 .card-24-builder-first-owner div {
+    color: #dbdbdb
+}
+
+.card-24-153 .card-24-playstyle-container path, .card-24-small-153 .card-24-small-playstyle-container path, .card-24-pack-153 .card-24-pack-playstyle-container path, .card-24-builder-153 .card-24-builder-playstyle-container path {
+    fill: #dbdbdb
+}
+
+.card-24-153 .card-24-extra-info-txt, .card-24-153 .card-24-extra-info-foot, .card-24-153 .card-24-foot-txt, .card-24-pack-153 .card-24-pack-extra-info-txt, .card-24-pack-153 .card-24-pack-extra-info-foot, .card-24-pack-153 .card-24-pack-foot-txt, .card-24-builder-153 .card-24-builder-extra-info-txt, .card-24-builder-153 .card-24-builder-extra-info-foot, .card-24-builder-153 .card-24-builder-foot-txt {
+    border-color: #594d2c
+}
+
+.card-24-small-153 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/153.png);
+    color: #594d2c
+}
+
+.card-24-142, .card-24-pack-142, .card-24-builder-142 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/142.png);
+    color: #fffcfe
+}
+
+.card-24-142 .card-24-first-owner div, .card-24-pack-142 .card-24-pack-first-owner div, .card-24-builder-142 .card-24-builder-first-owner div {
+    color: #ff239f
+}
+
+.card-24-142 .card-24-playstyle-container path, .card-24-small-142 .card-24-small-playstyle-container path, .card-24-pack-142 .card-24-pack-playstyle-container path, .card-24-builder-142 .card-24-builder-playstyle-container path {
+    fill: #ff239f
+}
+
+.card-24-142 .card-24-extra-info-txt, .card-24-142 .card-24-extra-info-foot, .card-24-142 .card-24-foot-txt, .card-24-pack-142 .card-24-pack-extra-info-txt, .card-24-pack-142 .card-24-pack-extra-info-foot, .card-24-pack-142 .card-24-pack-foot-txt, .card-24-builder-142 .card-24-builder-extra-info-txt, .card-24-builder-142 .card-24-builder-extra-info-foot, .card-24-builder-142 .card-24-builder-foot-txt {
+    border-color: #fffcfe
+}
+
+.card-24-small-142 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/142.png);
+    color: #fffcfe
+}
+
+.card-24-143, .card-24-pack-143, .card-24-builder-143 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/143.png);
+    color: #fffcfe
+}
+
+.card-24-143 .card-24-first-owner div, .card-24-pack-143 .card-24-pack-first-owner div, .card-24-builder-143 .card-24-builder-first-owner div {
+    color: #ff239f
+}
+
+.card-24-143 .card-24-playstyle-container path, .card-24-small-143 .card-24-small-playstyle-container path, .card-24-pack-143 .card-24-pack-playstyle-container path, .card-24-builder-143 .card-24-builder-playstyle-container path {
+    fill: #ff239f
+}
+
+.card-24-143 .card-24-extra-info-txt, .card-24-143 .card-24-extra-info-foot, .card-24-143 .card-24-foot-txt, .card-24-pack-143 .card-24-pack-extra-info-txt, .card-24-pack-143 .card-24-pack-extra-info-foot, .card-24-pack-143 .card-24-pack-foot-txt, .card-24-builder-143 .card-24-builder-extra-info-txt, .card-24-builder-143 .card-24-builder-extra-info-foot, .card-24-builder-143 .card-24-builder-foot-txt {
+    border-color: #fffcfe
+}
+
+.card-24-small-143 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/143.png);
+    color: #fffcfe
+}
+
+.card-24-107, .card-24-pack-107, .card-24-builder-107 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/107.png);
+    color: #fff
+}
+
+.card-24-107 .card-24-first-owner div, .card-24-pack-107 .card-24-pack-first-owner div, .card-24-builder-107 .card-24-builder-first-owner div {
+    color: #0b346d
+}
+
+.card-24-107 .card-24-playstyle-container path, .card-24-small-107 .card-24-small-playstyle-container path, .card-24-pack-107 .card-24-pack-playstyle-container path, .card-24-builder-107 .card-24-builder-playstyle-container path {
+    fill: #0b346d
+}
+
+.card-24-107 .card-24-extra-info-txt, .card-24-107 .card-24-extra-info-foot, .card-24-107 .card-24-foot-txt, .card-24-pack-107 .card-24-pack-extra-info-txt, .card-24-pack-107 .card-24-pack-extra-info-foot, .card-24-pack-107 .card-24-pack-foot-txt, .card-24-builder-107 .card-24-builder-extra-info-txt, .card-24-builder-107 .card-24-builder-extra-info-foot, .card-24-builder-107 .card-24-builder-foot-txt {
+    border-color: #fff
+}
+
+.card-24-small-107 {
+    background-image: url(https://cdn.futwiz.com/assets/img/fc24/items/small/107.png);
+    color: #fff
+}
+
+.hidden {
+    opacity: 0.0001;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+input {
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+.autocomplete-items {
+    background-color: #212529;
+    position: absolute;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    max-height: 300px;
+    overflow: auto;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    /*background-color: #fff;*/
+    border: 1px solid #d4d4d4;
+    margin-bottom: 5px;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: DodgerBlue;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    /*color: #ffffff;*/
+}
+
+/* Custom scrollbar for WebKit-based browsers (Chrome, Brave, Safari, etc.) */
+* ::-webkit-scrollbar {
+    height: .03rem;
+    width: .1rem;
+}
+
+* ::-webkit-scrollbar-thumb {
+    background-color: DodgerBlue;
+}
+
+* ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Custom scrollbar for Firefox */
+* {
+    scrollbar-width: thin; /* Options: auto, thin */
+    scrollbar-color: DodgerBlue transparent; /* thumb color and track color */
+}
