@@ -51,9 +51,9 @@ class GameController extends Controller
         elseif ($player['leagueName'] == 'Serie A TIM')
             $player['leagueName'] = 31;
         elseif ($player['leagueName'] == 'Liga Portugal')
-            $player['leagueName'] = 17;
-        elseif ($player['leagueName'] == 'Trendyol Süper Lig')
             $player['leagueName'] = 308;
+        elseif ($player['leagueName'] == 'Trendyol Süper Lig')
+            $player['leagueName'] = 68;
 
         if ($player['commonName'] == '')
             $player['commonName'] = $player['lastName'];
