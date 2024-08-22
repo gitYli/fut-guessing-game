@@ -78,7 +78,7 @@
                 </div>
                 <div class="card-24-league">
                     <img id="league" class="hidden"
-                         src="{{ url( 'https://cdn.futwiz.com/assets/img/fc24/leagues/'. $player['leagueName'] . '.png') }}">
+                         src="">
                 </div>
                 <div class="card-24-club">
                     <img id="club" class="hidden" src="{{ url($player['team']['imageUrl']) }}">
@@ -98,12 +98,12 @@
 <script>
     console.log("Player Name (For Debugging): {{ trim(($player['firstName'] ?? '') . ' ' . ($player['lastName'] ?? '')) }}");
     let hiddenFields = ['club', 'nation', 'league', 'overall_rating', 'position', 'pac', 'pas', 'def', 'sho', 'dri', 'phy'];
-    let playerData = @json($player); // Ensure this JSON matches the structure shown
 
     let score = 8; // Initialize the score
 
     revealRandomField();
     revealRandomField();
+    leagueNameToId()
 
     // Function to reveal one random field
     function revealRandomField() {
@@ -127,38 +127,47 @@
         });
     }
 
+    function leagueNameToId(){
+        let image = document.getElementById('league');
+        const NameToId = {
+            'ROSHN Saudi League': 350,
+            'Premier League': 13,
+            'Bundesliga': 19,
+            'Ligue 1 Uber Eats': 16,
+            'MLS': 39,
+            'LALIGA EA SPORTS': 53,
+            'Serie A TIM': 31,
+            'Liga Portugal': 308,
+            'Trendyol Süper Lig': 68,
+            'Eredivisie': 10,
+        };
+
+        image.src = `https://cdn.futwiz.com/assets/img/fc24/leagues/${NameToId['{{ $player['leagueName'] }}']}.png`;
+        console.log(NameToId['{{ $player['leagueName'] }}'])
+    }
+
     // Function to submit the guess
     function submitGuess() {
         let name = document.getElementById('player-name').value;
-        fetch('/guess', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-            },
-            body: JSON.stringify({name: name})
-        }).then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    // Correct guess - reveal all fields
-                    revealAllField()
-                    document.getElementById('message').innerText = 'Correct! Player details are revealed.';
-                } else {
-                    // Wrong guess - reveal one random field and decrease the score
-                    revealRandomField();
-                    score -= 1;
-                    document.getElementById('score').innerText = score;
-                    document.getElementById('message').innerText = data.message;
+        if (name === "{{ trim(($player['firstName'] ?? '') . ' ' . ($player['lastName'] ?? '')) }}") {
+            // Correct guess - reveal all fields
+            revealAllField()
+            document.getElementById('message').innerText = 'Correct! Player details are revealed.';
+        } else {
+            // Wrong guess - reveal one random field and decrease the score
+            revealRandomField();
+            score -= 1;
+            document.getElementById('score').innerText = score;
+            document.getElementById('message').innerText = 'Wrong guess';
 
-                    // Disable input and button if score is 0
-                    if (score <= 0) {
-                        document.getElementById('player-name').disabled = true;
-                        document.querySelector('button').disabled = true;
-                        document.getElementById('message').innerText += ' No more attempts left.';
-                        revealAllField()
-                    }
-                }
-            });
+            // Disable input and button if score is 0
+            if (score <= 0) {
+                document.getElementById('player-name').disabled = true;
+                document.querySelector('button').disabled = true;
+                document.getElementById('message').innerText += ' No more attempts left.';
+                revealAllField()
+            }
+        }
     }
 
 
