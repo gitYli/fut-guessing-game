@@ -14,17 +14,17 @@
 <body>
 <div class="container text-center">
     <h1 class="display-3 fw-normal display-color text-primary text-center">Guess the Football Player</h1>
-    <p class="display-5 text-body-secondary">Score: <span id="score">8</span></p>
+    <p class="display-5 text-body-secondary">Score: <span id="score">6</span></p>
     <div class="d-flex justify-content-center align-items-center full-height">
-        <div id="card" class="card-24 card-24-gold">
+        <div id="card" class="card-24 card-24-icon ">
             <div id="Face" class="card-24-face hidden">
                 <div class="card-24-face-inner">
                     {{--            <img src="{{ url('https://cdn.futwiz.com/assets/img/fc24/faces/' . $player['id'] . '.png') }}" alt="Haaland FC 24 Custom Card Creator Face">--}}
-                    <img src="{{ url($player['avatarUrl']) }}" alt="Haaland FC 24 Custom Card Creator Face">
+                    <img src="{{ url($player['avatarUrl']) }}" alt="{{ $player['commonName'] }} FC 24 Custom Card Creator Face">
                 </div>
             </div>
             <div id="overall_rating" class="card-24-rating hidden">{{ $player['overallRating'] }}</div>
-            <div id="position" class="card-24-position hidden">{{ $player['position']['shortLabel'] }}</div>
+            <div id="position" class="card-24-position hidden">{{ $player['position'] }}</div>
             {{--    <div class="card-24-chemstyle"><i class="chemicon-basic"></i></div>--}}
             {{--    <div class="card-24-first-owner"><div>1</div></div>--}}
             <div id="name" class="card-24-name hidden">{{  $player['commonName'] }}</div>
@@ -51,37 +51,35 @@
                 </div>
                 <div class="att-row-num">
                     <div id="pac" class="att1-num card-24-attnum1 hidden">
-                        {{ $player['stats']['pac']['value'] }}
+                        {{ $player['PAC'] }}
                     </div>
                     <div id="sho" class="att2-num card-24-attnum2 hidden">
-                        {{ $player['stats']['sho']['value'] }}
+                        {{ $player['SHO'] }}
                     </div>
                     <div id="pas" class="att3-num card-24-attnum3 hidden">
-                        {{ $player['stats']['pas']['value'] }}
+                        {{ $player['PAS'] }}
                     </div>
                     <div id="dri" class="att4-num card-24-attnum4 hidden">
-                        {{ $player['stats']['dri']['value'] }}
+                        {{ $player['DRI'] }}
                     </div>
                     <div id="def" class="att5-num card-24-attnum5 hidden">
-                        {{ $player['stats']['def']['value'] }}
+                        {{ $player['DEF'] }}
                     </div>
                     <div id="phy" class="att6-num card-24-attnum6 hidden">
-                        {{ $player['stats']['phy']['value'] }}
+                        {{ $player['PHY'] }}
                     </div>
                 </div>
             </div>
             <div class="card-24-details">
                 <div class="card-24-nation">
                     {{--            <img src="{{ url($player['nationality']['imageUrl']) }}">--}}
-                    <img id="nation" class="hidden"
-                         src="{{ url('https://cdn.futwiz.com/assets/img/fc24/flags/' . $player['nationality']['id']. '.png') }}">
+                    <img id="nation" class="hidden" src="{{ $player['nationalityImage'] }}" alt="nation-image">
                 </div>
                 <div class="card-24-league">
-                    <img id="league" class="hidden"
-                         src="">
+                    <img id="league" src="https://cdn.futwiz.com/assets/img/fc24/leagues/2118.png" alt="league-image">
                 </div>
                 <div class="card-24-club">
-                    <img id="club" class="hidden" src="{{ url($player['team']['imageUrl']) }}">
+                    <img id="club" src="https://cdn.futwiz.com/assets/img/fc24/badges/112658.png" alt="club-image">
                 </div>
             </div>
         </div>
@@ -96,14 +94,14 @@
 </div>
 
 <script>
-    console.log("Player Name (For Debugging): {{ trim(($player['firstName'] ?? '') . ' ' . ($player['lastName'] ?? '')) }}");
-    let hiddenFields = ['club', 'nation', 'league', 'overall_rating', 'position', 'pac', 'pas', 'def', 'sho', 'dri', 'phy'];
+    console.log("Player Name (For Debugging): {{ $player['fullName'] }}");
+    let hiddenFields = ['nation', 'overall_rating', 'position', 'pac', 'pas', 'def', 'sho', 'dri', 'phy'];
 
-    let score = 8; // Initialize the score
+    let score = 6; // Initialize the score
 
     revealRandomField();
     revealRandomField();
-    leagueNameToId()
+    // leagueNameToId()
 
     // Function to reveal one random field
     function revealRandomField() {
@@ -127,29 +125,10 @@
         });
     }
 
-    function leagueNameToId(){
-        let image = document.getElementById('league');
-        const NameToId = {
-            'ROSHN Saudi League': 350,
-            'Premier League': 13,
-            'Bundesliga': 19,
-            'Ligue 1 Uber Eats': 16,
-            'MLS': 39,
-            'LALIGA EA SPORTS': 53,
-            'Serie A TIM': 31,
-            'Liga Portugal': 308,
-            'Trendyol Süper Lig': 68,
-            'Eredivisie': 10,
-        };
-
-        image.src = `https://cdn.futwiz.com/assets/img/fc24/leagues/${NameToId['{{ $player['leagueName'] }}']}.png`;
-        console.log(NameToId['{{ $player['leagueName'] }}'])
-    }
-
     // Function to submit the guess
     function submitGuess() {
         let name = document.getElementById('player-name').value;
-        if (name === "{{ trim(($player['firstName'] ?? '') . ' ' . ($player['lastName'] ?? '')) }}") {
+        if (name === "{{ $player['fullName'] }}") {
             // Correct guess - reveal all fields
             revealAllField()
             document.getElementById('message').innerText = 'Correct! Player details are revealed.';
@@ -280,57 +259,106 @@
     }
 
     /*An array containing all the country names in the world:*/
-    var countries = ["Kylian Mbappé", "Erling Haaland", "Kevin De Bruyne", "Lionel Messi", "Karim Benzema", "Thibaut Courtois",
-        "Harry Kane", "Robert Lewandowski", "Mohamed Salah", "Rúben Santos Gato Alves Dias", "Vinícius José de Oliveira Júnior",
-        "Rodrigo Hernández Cascante", "Neymar da Silva Santos Jr.", "Marc-André ter Stegen", "Virgil van Dijk", "Alisson Ramses Becker",
-        "Carlos Henrique Venancio Casimiro", "Bruno Miguel Borges Fernandes", "Antoine Griezmann", "Victor Osimhen",
-        "Bernardo Mota Carvalho e Silva", "Federico Valverde", "Ederson Santana de Moraes", "Joshua Kimmich", "Jan Oblak",
-        "Luka Modrić", "Frenkie de Jong", "Lautaro Martínez", "Martin Ødegaard", "Mike Maignan", "Marcos Aoás Corrêa",
-        "Gregor Kobel", "Heung Min Son", "Gianluigi Donnarumma", "Manuel Neuer", "Ousmane Dembélé", "Bukayo Saka",
-        "Jude Bellingham", "Rafael da Conceição Leão", "Pedro González López", "Matthijs de Ligt", "Sandro Tonali",
-        "Riyad Mahrez", "Jamal Musiala", "Nicolò Barella", "Ronald Araujo", "Paulo Dybala", "İlkay Gündoğan", "Sergej Milinković-Savić",
-        "Khvicha Kvaratskhelia", "Andrew Robertson", "Daniel Parejo Muñoz", "Sadio Mané", "Toni Kroos", "Éder Gabriel Militão",
-        "Christopher Nkunku", "N'Golo Kanté", "João Pedro Cavaco Cancelo", "C. Ronaldo dos Santos Aveiro", "Trent Alexander-Arnold",
-        "Wojciech Szczęsny", "Jack Grealish", "Marcos Acuña", "David Alaba", "Iago Aspas Juncal", "Alessandro Bastoni", "Domenico Berardi",
-        "Yassine Bounou", "Hakan Çalhanoğlu", "Kingsley Coman", "Giovanni Di Lorenzo", "Phil Foden", "Leon Goretzka", "Theo Hernández",
-        "Ciro Immobile", "Jules Koundé", "Aymeric Laporte", "Emiliano Martínez", "Keylor Navas", "André Onana", "Thomas Partey",
-        "Marcus Rashford", "Declan Rice", "Antonio Rüdiger", "Rodrygo Silva de Goes", "John Stones", "Diogo José Teixeira da Silva",
-        "Kevin Trapp", "Kieran Trippier", "Raphaël Varane", "Florian Wirtz", "Thiago Alcântara", "Ismaël Bennacer", "Julian Brandt",
-        "Yannick Carrasco", "Koen Casteels", "Federico Chiesa", "Thiago Emiliano da Silva", "Rúben Diogo da Silva Neves",
-        "Rodrigo Javier De Paul", "Memphis Depay", "Moussa Diaby", "Raphael Dias Belloli", "Luis Díaz", "Gabriel dos S. Magalhães",
-        "Gabriel Fernando de Jesus", "Matthias Ginter", "Serge Gnabry", "Alejandro Grimaldo García", "Bruno Guimarães Moura",
-        "Péter Gulácsi", "Achraf Hakimi", "Fábio Henrique Tavares", "Lucas Hernández", "Pierre-Emile Højbjerg", "Reece James",
-        "Min Jae Kim", "Randal Kolo Muani", "Kalidou Koulibaly", "Marcos Llorente Moreno", "Stanislav Lobotka", "Romelu Lukaku",
-        "James Maddison", "Gabriel Teodoro Martinelli Silva", "Lisandro Martínez", "Mikel Merino Zazón", "Thomas Müller", "Nick Pope",
-        "Adrien Rabiot", "Aaron Ramsdale", "Alejandro Remiro Gargallo", "Jorge Resurrección", "Luis Alberto Romero Alconchel", "Leroy Sané",
-        "Gleison Bremer Silva Nascimento", "Milan Škriniar", "Chris Smalling", "Yann Sommer", "Niklas Süle", "Aurélien Tchouaméni",
-        "Fikayo Tomori", "Kyle Walker", "Francesco Acerbi", "Jordi Alba Ramos", "Marco Asensio Willemsen", "Wissam Ben Yedder",
-        "Sven Botman", "Marcelo Brozović", "Sergio Busquets Burgos", "Emre Can", "Andreas Christensen", "Sergi Darder Moll",
-        "Alphonso Davies", "Ángel Di María", "Edin Džeko", "Christian Eriksen", "Nabil Fekir", "Enzo Fernández",
-        "José Ignacio Fernández Iglesias", "Rafael A. Ferreira Silva", "Luiz Frello Filho Jorge", "Pau Francisco Torres", "Jeremie Frimpong",
-        "Cody Gakpo", "José María Giménez", "Sébastien Haller", "Jonas Hofmann", "Mats Hummels", "Borja Iglesias Quintás", "Filip Kostić",
-        "Alexandre Lacazette", "Konrad Laimer", "Hugo Lloris", "Gianluca Mancini", "Alex Meret", "Álvaro Borja Morata Martín",
-        "Gerard Moreno Balagueró", "Daniel Olmo Carvajal", "Willi Orban", "Mikel Oyarzabal Ugarte", "Pablo Martín Páez Gavira",
-        "João Maria Palhinha Gonçalves", "Benjamin Pavard", "Lorenzo Pellegrini", "Marco Reus", "Guido Rodríguez", "Alessio Romagnoli",
-        "William Saliba", "Patrik Schick", "Nico Schlotterbeck", "Luke Shaw", "Unai Simón Mendibil", "Raheem Sterling", "Dušan Vlahović",
-        "André-Franck Zambo Anguissa", "Piotr Zieliński", "Manuel Akanji", "Robert Andrich", "Joelinton Apolinário de Lira",
-        "Roberto Firmino Barbosa de Oliveira", "Rodrigo Bentancur", "Eduardo Camavinga", "Daniel Carvajal Ramos", "Ángel Correa",
-        "Ricardo Jorge da Luz Horta", "Otávio Edmilson da Silva Monteiro", "Stefan de Vrij", "Boulaye Dia", "Federico Dimarco",
-        "Youssef En-Nesyri", "Mark Flekken", "Seko Fofana", "Javier Galán Gil", "David García Zubiria", "José Luís Gayà Peña", "Olivier Giroud",
-        "Mario Götze", "Vincenzo Grifo", "Raphaël Guerreiro", "Joško Gvardiol", "Kai Havertz", "Mario Hermoso Canseco", "Franck Yannick Kessié",
-        "Presnel Kimpembe", "Orkun Kökçü", "Mateo Kovačić", "Robin Le Normand", "Jeremías Conan Ledesma", "Thomas Lemar", "Dominik Livaković",
-        "Manuel Locatelli", "Anthony Lopes", "Alexis Mac Allister", "Donyell Malen", "Iñigo Martínez Berridi", "José Luis Mato Sanmartín",
-        "Noussair Mazraoui", "Diogo Meireles Costa", "Ferland Mendy", "Édouard Mendy", "Nahuel Molina", "João Mário N. Costa Eduardo",
-        "Darwin Núñez", "Loïs Openda", "Nicolás Otamendi", "Isaac Palazón Camacho", "Pedro António Pereira Gonçalves", "Jordan Pickford",
-        "Ivan Provedel", "Fernando Reges Mouta", "Cristian Romero", "Jadon Sancho", "Stefan Savić", "Fabian Schär", "Dominik Szoboszlai",
-        "Dušan Tadić", "Mehdi Taremi", "Nuno Alexandre Tavares Mendes", "Youri Tielemans", "Lucas Torreira", "Ferran Torres García",
-        "Viktor Tsygankov", "Enes Ünal", "Dayot Upamecano", "Guglielmo Vicario", "Timo Werner", "Callum Wilson", "Granit Xhaka",
-        "Mattia Zaccagni", "Nathan Aké", "Ali Al Musrati", "Raúl Albiol Tortajada", "Toby Alderweireld", "Miguel Almirón", "Edson Álvarez",
-        "Yeray Álvarez López", "Maximilian Arnold", "Kepa Arrizabalaga", "Alejandro Balde Martínez", "Steven Berghuis", "Benjamin Bourigeaud",
-        "Davide Calabria", "Etienne Capoue", "Ben Chilwell", "Samuel Chukwueze", "Jonathan Clauss", "Sebastián Coates",
-        "Lucas Tolentino Coelho de Lima", "Bryan Cristante", "Danilo Luiz da Silva", "Arnaut Danjuma", "Rui Tiago Dantas da Silva",
-        "Jonathan David", "Frederico de Paula Santos", "Rui Pedro dos Santos Patrício", "Denzel Dumfries", "Lewis Dunk", "João Félix Sequeira",
-        "Norberto Gomes Betuncal", "Nicolás González"];
+    var countries = ["Pelé",
+        "Zinedine Zidane",
+        "Ronaldo",
+        "Ronaldinho",
+        "Johan Cruyff",
+        "Lev Yashin",
+        "Ferenc Puskás",
+        "Mané Garrincha",
+        "Paolo Maldini",
+        "Müller",
+        "Charlton",
+        "Franco Baresi",
+        "Thierry Henry",
+        "Carlos Alberto Torres",
+        "Marcos Cafú",
+        "Marco van Basten",
+        "Eusébio",
+        "Antunes Coimbra",
+        "Roberto Baggio",
+        "Iker Casillas",
+        "Raúl González Blanco",
+        "George Best",
+        "Andrea Pirlo",
+        "Xavier Hernández",
+        "Dennis Bergkamp",
+        "Ruud Gullit",
+        "Rivaldo",
+        "Roberto Carlos",
+        "Alessandro Del Piero",
+        "Lothar Matthäus",
+        "Bobby Moore",
+        "Kenny Dalglish",
+        "Javier Zanetti",
+        "Alessandro Nesta",
+        "Hugo Sánchez",
+        "Alan Shearer",
+        "Kaká",
+        "Samuel Eto'o",
+        "Didier Drogba",
+        "Ruud van Nistelrooy",
+        "Éric Cantona",
+        "Sócrates",
+        "Philipp Lahm",
+        "Gary Lineker",
+        "Hristo Stoichkov",
+        "Fabio Cannavaro",
+        "Jairzinho",
+        "Carles Puyol Saforcada",
+        "Emilio Butragueño",
+        "Peter Schmeichel",
+        "Luís Figo",
+        "Franck Ribéry",
+        "Riquelme",
+        "Michael Laudrup",
+        "Fernando Hierro Ruiz",
+        "Andriy Shevchenko",
+        "Steven Gerrard",
+        "Ronald Koeman",
+        "Paul Scholes",
+        "Wayne Rooney",
+        "Edwin van der Sar",
+        "Petr Cech",
+        "Bastian Schweinsteiger",
+        "Michael Owen",
+        "Rio Ferdinand",
+        "David Beckham",
+        "Pavel Nedvěd",
+        "Laurent Blanc",
+        "Patrick Vieira",
+        "Robin van Persie",
+        "Marcel Desailly",
+        "Miroslav Klose",
+        "Gheorghe Hagi",
+        "Ian Wright",
+        "Clarence Seedorf",
+        "Michael Ballack",
+        "Fernando Torres",
+        "Davor Šuker",
+        "Patrick Kluivert",
+        "Claude Makélélé",
+        "John Barnes",
+        "Frank Lampard",
+        "David Trezeguet",
+        "Ian Rush",
+        "Gianfranco Zola",
+        "Robert Pirès",
+        "Frank Rijkaard",
+        "Nemanja Vidić",
+        "Xabi Alonso",
+        "Emmanuel Petit",
+        "Juan Sebastián Verón",
+        "Ashley Cole",
+        "Michael Essien",
+        "Henrik Larsson",
+        "Hernán Crespo",
+        "Sol Campbell",
+        "Roy Keane",
+        "Gennaro Gattuso",
+        "Gianluca Zambrotta",
+        "Luis Hernández",];
 
     /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
     autocomplete(document.getElementById("player-name"), countries);
