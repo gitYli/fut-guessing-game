@@ -7,17 +7,17 @@ use GuzzleHttp\Client;
 
 class GuessPlayer extends Component
 {
-    public array $player;
+    public $player;
     public int $score = 8;
     private Client $client;
     private string $apiUrl;
 
     public function mount()
     {
-        $this->fetchRandomPlayer();
+        $this->fetchAPlayer();
     }
 
-    public function fetchRandomPlayer()
+    public function fetchAPlayer()
     {
         $this->client = new Client();
         $randomNumber = rand(0, 300);
@@ -30,11 +30,9 @@ class GuessPlayer extends Component
             $this->apiUrl = 'https://drop-api.ea.com/rating/fc-24?gender=0&offset=200';
         }
 
-        $response = $this->client->get($this->apiUrl);
-        $players = json_decode($response->getBody(), true)['items'];
 
         do {
-            $this->player = $players[array_rand($players)];
+            $this->player = $this->fetchRandomPlayer();
         } while ($this->player['position']['shortLabel'] == 'GK');
 
         if ($this->player['commonName'] == '') {
@@ -44,6 +42,16 @@ class GuessPlayer extends Component
         $this->player['score'] = 8;
 
         $this->player['avatarUrl'] = str_replace('50w', '512w', $this->player['avatarUrl']);
+        $this->player['PlayerName'] = trim(($this->player['firstName'] ?? '') . ' ' . ($this->player['lastName'] ?? ''));
+    }
+
+    private function fetchRandomPlayer()
+    {
+        $response = $this->client->get($this->apiUrl);
+        $players = json_decode($response->getBody(), true)['items'];
+
+        // Get a random player
+        return $players[array_rand($players)];
     }
 
     public function submitGuess($name)

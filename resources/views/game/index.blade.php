@@ -13,13 +13,9 @@
     @livewireStyles
 </head>
 <body>
-@livewire('guess-player')    <!-- Correct reference -->
-{{--@livewire('App\\Http\\Livewire\\GuessPlayer')--}}
+    @livewire('guess-player')
 
-<!-- Your other content -->
-
-@livewireScripts
-
+    @livewireScripts
 <meta name="csrf-token" content="{{ csrf_token() }}">
 </body>
 </html>

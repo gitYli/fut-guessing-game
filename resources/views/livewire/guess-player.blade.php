@@ -9,7 +9,7 @@
                     <img src="{{ url($player['avatarUrl']) }}" alt="{{  $player['commonName'] }} FC 25 Custom Card Creator Face">
                 </div>
             </div>
-            <div id="overall_rating" class="card-25-rating hidden">{{ $player['overallRating'] }}</div>
+            <div id="overall_rating" class="card-25-rating hidden" x-text="$wire.player.overallRating"></div>
             <div id="position" class="card-25-position hidden">{{ $player['position']['shortLabel'] }}</div>
             {{--    <div class="card-24-chemstyle"><i class="chemicon-basic"></i></div>--}}
             {{--    <div class="card-24-first-owner"><div>1</div></div>--}}
@@ -74,22 +74,24 @@
     </div>
 
     <div class="autocomplete">
-        <button class="btn btn-primary mb-2 w-100" onclick="submitGuess()">Guess</button>
-        <button class="btn btn-primary mb-2 w-100" wire:click="fetchRandomPlayer" onclick="resetState()">Refresh Player</button>
+        <button class="btn btn-primary mb-2 w-100" id="guess" onclick="submitGuess()">Guess</button>
+        <button class="btn btn-primary mb-2 w-100" id="refresh" wire:click="fetchAPlayer" onclick="resetState()">Refresh Player</button>
         <input class="form-control mb-2" type="text" id="player-name" placeholder="Guess the player's name..."
                autocomplete="off" style="width: 300px">
     </div>
     <p class="display-5" id="message"></p>
+    <span id="p-name" class="hidden">{{ trim(($player['firstName'] ?? '') . ' ' . ($player['lastName'] ?? '')) }}</span>
+    <span id="leagueName" class="hidden">{{ $player['leagueName'] }}</span>
 </div>
 
-<script>
-    {{--let playerName = "{{ trim(($player['firstName'] ?? '') . ' ' . ($player['lastName'] ?? '')) }}";--}}
-    {{--let leagueName = "{{ $player['leagueName'] }}";--}}
-    let playerName = "";
-    let leagueName = "";
-    console.log("Player Name (For Debugging): " + playerName);
-    let hiddenFields = ['club', 'nation', 'league', 'overall_rating', 'position', 'pac', 'pas', 'def', 'sho', 'dri', 'phy'];
 
+<script>
+    let playerName = document.getElementById('p-name').textContent;
+    let leagueName = document.getElementById('leagueName').textContent;
+    console.log("Player Name (For Debugging): " + playerName);
+    console.log("League Name (For Debugging): " + leagueName);
+    let hiddenFields = ['club', 'nation', 'league', 'overall_rating', 'position', 'pac', 'pas', 'def', 'sho', 'dri', 'phy'];
+    document.getElementById('refresh').disabled = true;
     let score = 8; // Initialize the score
 
     revealRandomField();
@@ -117,31 +119,22 @@
         document.getElementById('Face').classList.add('hidden');
         document.getElementById('name').classList.add('hidden');
 
+
         // Enable input and button
-        document.getElementById('player-name').disabled = false;
-        document.querySelector('button').disabled = false;
+        // document.getElementById('player-name').disabled = false;
+        // document.querySelector('button').disabled = false;
 
         setTimeout(() => {
+            playerName = document.getElementById('p-name').textContent;
+            leagueName = document.getElementById('leagueName').textContent;
             revealRandomField();
             revealRandomField();
             leagueNameToId();
-            playerName = "{{ trim(($player['firstName'] ?? '') . ' ' . ($player['lastName'] ?? '')) }}";
-            leagueName = "{{ $player['leagueName'] }}";
-        }, 900);
+            document.getElementById('refresh').disabled = true;
+            document.getElementById('player-name').disabled = false;
+            document.getElementById('guess').disabled = false;
+        }, 1000);
     }
-
-    document.addEventListener('livewire:load', function () {
-        Livewire.on('playerFetched', function (player) {
-            // Update the JS variables when the player is fetched
-            playerName = player.firstName + ' ' + player.lastName;
-            leagueName = player.leagueName;
-
-            console.log("New Player Fetched: " + playerName);
-
-            // Reset UI state
-            resetState();
-        });
-    });
 
     // Function to reveal one random field
     function revealRandomField() {
@@ -171,7 +164,7 @@
             'ROSHN Saudi League': 350,
             'Premier League': 13,
             'Bundesliga': 19,
-            "Ligue 1 McDonald&#039;s": 16,
+            "Ligue 1 McDonald's": 16,
             'MLS': 39,
             'LALIGA EA SPORTS': 53,
             'Serie A Enilive': 31,
@@ -188,9 +181,13 @@
     // Function to submit the guess
     function submitGuess() {
         let name = document.getElementById('player-name').value;
+        console.log("Player Name (For Debugging 2): " + playerName);
         if (name === playerName) {
             // Correct guess - reveal all fields
             revealAllField()
+            document.getElementById('player-name').disabled = true;
+            document.getElementById('guess').disabled = true;
+            document.getElementById('refresh').disabled = false;
             document.getElementById('message').innerText = 'Correct! Player details are revealed.';
         } else {
             // Wrong guess - reveal one random field and decrease the score
@@ -202,7 +199,8 @@
             // Disable input and button if score is 0
             if (score <= 0) {
                 document.getElementById('player-name').disabled = true;
-                document.querySelector('button').disabled = true;
+                document.getElementById('guess').disabled = true;
+                document.getElementById('refresh').disabled = false;
                 document.getElementById('message').innerText += ' No more attempts left.';
                 revealAllField()
             }
